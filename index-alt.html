@@ -426,76 +426,19 @@
       </button>
       
       <!-- Modal Content -->
-      <div id="profile-print-area" class="p-8 sm:p-12">
-        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 border-b pl-2 pb-8 border-[var(--border)] relative">
-           <img src="./assets/b3d black.png" alt="Balloon 3D Logo" class="w-24 sm:w-32 object-contain" />
-           <div class="text-center sm:text-left pt-2">
-             <h2 class="font-display text-4xl sm:text-5xl text-[var(--dark)] tracking-tight">BALLOON <span class="text-[var(--orange)]">3D</span></h2>
-             <p class="font-outfit text-sm text-[var(--orange)] tracking-[0.2em] uppercase font-medium mt-1">Company Profile</p>
-           </div>
+      <div class="relative w-full h-auto p-4 sm:p-6 group">
+        <img src="./assets/Screenshot 2026-05-14 203612.png" alt="Company Profile" class="w-full h-auto object-contain rounded-xl shadow-sm border border-gray-200" />
+        
+        <div class="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl m-4 sm:m-6 backdrop-blur-[2px]">
+          <a href="./assets/Company-Profile.pdf" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 font-body font-medium text-sm sm:text-base tracking-[0.12em] uppercase no-underline rounded-full border-2 border-[var(--orange)] bg-[var(--orange)] text-white hover:bg-transparent hover:text-[var(--orange)] transition-all shadow-lg transform hover:scale-105 duration-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+            View PDF
+          </a>
+          <a href="./assets/Company-Profile.pdf" download="Balloon3D_Company_Profile.pdf" class="inline-flex items-center gap-3 px-8 py-4 font-body font-medium text-sm sm:text-base tracking-[0.12em] uppercase no-underline rounded-full border-2 border-white bg-white text-gray-900 hover:bg-transparent hover:text-white transition-all shadow-lg transform hover:scale-105 duration-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+            Download PDF
+          </a>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
-          <div>
-            <h3 class="font-outfit text-xl font-semibold mb-6 flex items-center gap-2 text-[var(--dark)]">
-              <svg class="w-5 h-5 text-[var(--orange)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              About Us
-            </h3>
-            <p class="font-outfit text-gray-600 text-sm leading-relaxed mb-4">
-              Balloon 3D is a premier provider of industrial-grade 3D printing and digital fabrication services. Established with a vision to streamline complex manufacturing, we blend innovative technology with expert engineering to transform concepts into high-fidelity functional prototypes and end-use components.
-            </p>
-            <p class="font-outfit text-gray-600 text-sm leading-relaxed">
-              We specialize in Rapid Prototyping, FDM/SLS/SLA Printing, 3D Modeling, and Scanning, ensuring that every project is delivered with unmatched precision, speed, and cost efficiency. Let us print your imagination into reality.
-            </p>
-          </div>
-          <div>
-            <h3 class="font-outfit text-xl font-semibold mb-6 flex items-center gap-2 text-[var(--dark)]">
-              <svg class="w-5 h-5 text-[var(--orange)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-              Contact Information
-            </h3>
-            <div class="space-y-4 font-outfit text-sm text-gray-700">
-              <div class="flex items-start gap-3">
-                <span class="font-semibold w-[80px] shrink-0">Phone:</span>
-                <a href="tel:+917219855584" class="hover:text-[var(--orange)] transition-colors">+91 72198 55584</a>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="font-semibold w-[80px] shrink-0">Email:</span>
-                <a href="mailto:info@balloon3d.com" class="hover:text-[var(--orange)] transition-colors">info@balloon3d.com</a>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="font-semibold w-[80px] shrink-0">Address:</span>
-                <span class="leading-relaxed">Landmark: Bank of Baroda, 108/109 Sambhav Industries, Navghar Road, Vasai East, Mumbai, Maharashtra 401202</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-12 max-w-full">
-          <h3 class="font-outfit text-xl font-semibold mb-6 flex items-center gap-2 text-[var(--dark)]">
-            <svg class="w-5 h-5 text-[var(--orange)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
-            Connect With Us
-          </h3>
-          <div class="flex flex-wrap gap-3 font-outfit text-sm">
-            <a href="https://www.instagram.com/3dballoon/" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">Instagram</a>
-            <a href="https://www.tumblr.com/balloon3d" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">Tumblr</a>
-            <a href="https://x.com/Balloon3d" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">X (Twitter)</a>
-            <a href="https://www.youtube.com/@Balloon3d" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">YouTube</a>
-            <a href="https://www.quora.com/profile/Balloon-3d" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">Quora</a>
-            <a href="https://www.pinterest.com/balloon3d/" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">Pinterest</a>
-            <a href="https://www.behance.net/balloon3d" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">Behance</a>
-            <a href="https://www.reddit.com/user/Balloon-3d/" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">Reddit</a>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Action Footer -->
-      <div class="bg-gray-50 p-6 sm:px-12 flex flex-col sm:flex-row justify-end gap-3 rounded-b-2xl border-t border-[var(--border)]">
-        <button onclick="document.getElementById('profile-modal').classList.add('hidden')" class="px-6 py-2.5 font-outfit text-sm font-medium text-gray-600 bg-white border border-gray-300 rounded-xl hover:bg-gray-50 transition-colors w-full sm:w-auto">Close Window</button>
-        <button onclick="window.print()" class="px-6 py-2.5 font-outfit text-sm font-medium text-white bg-[var(--dark)] rounded-xl hover:bg-[var(--orange)] transition-colors flex items-center justify-center gap-2 w-full sm:w-auto shadow-md">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2-2v4h10z" /></svg>
-          Save to PDF / Print
-        </button>
       </div>
     </div>
   </div>
@@ -513,7 +456,7 @@
     <a href="#" class="mob-link">Our Work</a>
     <a href="#" class="mob-link">Blog</a>
     <a href="#" class="mob-link">Contact</a>
-    <button onclick="document.getElementById('').classList.remove('hidden'); closeMenu();" class="mob-link flex items-center gap-3">
+    <button onclick="document.getElementById('profile-modal').classList.remove('hidden'); closeMenu();" class="mob-link flex items-center gap-3">
       <svg class="w-8 h-8 md:w-10 md:h-10 text-[var(--orange)]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H14" />
       </svg>
@@ -560,7 +503,7 @@
             <button>Русский (RU)</button>
           </div>
         </div>
-        <button onclick="document.getElementById('').classList.remove('hidden');"
+        <button onclick="document.getElementById('profile-modal').classList.remove('hidden');"
           class="inline-flex items-center gap-2 px-6 py-2.5 font-body font-medium text-[0.75rem] tracking-[0.12em] uppercase no-underline rounded-full z-10 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border border-gray-300 bg-gray-900 text-white cursor-pointer hover:bg-white hover:text-black hover:border-[var(--orange)] hover:-translate-y-1 hover:shadow-xl w-full sm:w-auto justify-center">
           <svg class="w-4 h-4 shrink-0 transition-transform hover:scale-110" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H14" />
