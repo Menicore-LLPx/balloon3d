@@ -15,7 +15,7 @@
       theme: {
         extend: {
           screens: {
-            'nav': '1212px',
+            'nav': '1050px',
           },
           fontFamily: {
             display: ['Bebas Neue', 'sans-serif'],
@@ -38,9 +38,9 @@
     :root {
       --orange: #f97316;
       --orange-dark: #ea6c0a;
-      --bg: #f4f3f0;
-      --dark: #0d0d0d;
-      --border: #e2e0db
+      --bg: #0a0a0a;
+      --dark: #f0f0f0;
+      --border: #262626;
     }
 
     html {
@@ -316,7 +316,7 @@
       position: absolute;
       top: calc(100% + 4px);
       right: 0;
-      background: #fff;
+      background: #000;
       border: 1px solid var(--border);
       min-width: 160px;
       z-index: 100;
@@ -340,7 +340,7 @@
       text-align: left;
       font-family: 'Outfit', sans-serif;
       font-size: .85rem;
-      color: #444;
+      color: #fff;
       background: transparent;
       border: none;
       border-bottom: 1px solid var(--border);
@@ -354,7 +354,7 @@
 
     .lang-menu button:hover {
       color: var(--orange);
-      background: #fef9f5
+      background: #111;
     }
 
     .accent-line {
@@ -419,8 +419,8 @@
 
   <!-- PROFILE MODAL -->
   <div id="profile-modal" class="fixed inset-0 z-[9999] hidden flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 sm:p-8 transition-opacity" onclick="if(event.target === this) this.classList.add('hidden')">
-    <div class="bg-white rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl relative animate-[fadeUp_0.3s_ease-out]">
-      <button onclick="document.getElementById('profile-modal').classList.add('hidden')" class="absolute top-4 right-4 p-2 text-gray-500 hover:text-[var(--orange)] bg-gray-100 rounded-full transition-colors z-10">
+    <div class="bg-[#0f0f0f] rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl relative animate-[fadeUp_0.3s_ease-out]">
+      <button onclick="document.getElementById('profile-modal').classList.add('hidden')" class="absolute top-4 right-4 p-2 text-gray-400 hover:text-[var(--orange)] bg-[#222222] rounded-full transition-colors z-10">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
       </button>
       
@@ -429,7 +429,7 @@
         <div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 border-b pl-2 pb-8 border-[var(--border)] relative">
            <img src="./assets/b3d black.png" alt="Balloon 3D Logo" class="w-24 sm:w-32 object-contain" />
            <div class="text-center sm:text-left pt-2">
-             <h2 class="font-display text-4xl sm:text-5xl text-[var(--dark)] tracking-tight">BALLOON <span class="text-[var(--orange)]">3D</span></h2>
+             <h2 class="font-display text-gray-400xl sm:text-gray-400xl text-[var(--dark)] tracking-tight">BALLOON <span class="text-[var(--orange)]">3D</span></h2>
              <p class="font-outfit text-sm text-[var(--orange)] tracking-[0.2em] uppercase font-medium mt-1">Company Profile</p>
            </div>
         </div>
@@ -440,10 +440,10 @@
               <svg class="w-5 h-5 text-[var(--orange)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               About Us
             </h3>
-            <p class="font-outfit text-gray-600 text-sm leading-relaxed mb-4">
+            <p class="font-outfit text-gray-400 text-sm leading-relaxed mb-4">
               Balloon 3D is a premier provider of industrial-grade 3D printing and digital fabrication services. Established with a vision to streamline complex manufacturing, we blend innovative technology with expert engineering to transform concepts into high-fidelity functional prototypes and end-use components.
             </p>
-            <p class="font-outfit text-gray-600 text-sm leading-relaxed">
+            <p class="font-outfit text-gray-400 text-sm leading-relaxed">
               We specialize in Rapid Prototyping, FDM/SLS/SLA Printing, 3D Modeling, and Scanning, ensuring that every project is delivered with unmatched precision, speed, and cost efficiency. Let us print your imagination into reality.
             </p>
           </div>
@@ -452,7 +452,7 @@
               <svg class="w-5 h-5 text-[var(--orange)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
               Contact Information
             </h3>
-            <div class="space-y-4 font-outfit text-sm text-gray-700">
+            <div class="space-y-4 font-outfit text-sm text-gray-400">
               <div class="flex items-start gap-3">
                 <span class="font-semibold w-[80px] shrink-0">Phone:</span>
                 <a href="tel:+917219855584" class="hover:text-[var(--orange)] transition-colors">+91 72198 55584</a>
@@ -475,23 +475,23 @@
             Connect With Us
           </h3>
           <div class="flex flex-wrap gap-3 font-outfit text-sm">
-            <a href="https://www.instagram.com/3dballoon/" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">Instagram</a>
-            <a href="https://www.tumblr.com/balloon3d" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">Tumblr</a>
-            <a href="https://x.com/Balloon3d" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">X (Twitter)</a>
-            <a href="https://www.youtube.com/@Balloon3d" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">YouTube</a>
-            <a href="https://www.quora.com/profile/Balloon-3d" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">Quora</a>
-            <a href="https://www.pinterest.com/balloon3d/" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">Pinterest</a>
-            <a href="https://www.behance.net/balloon3d" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">Behance</a>
-            <a href="https://www.reddit.com/user/Balloon-3d/" target="_blank" class="px-4 py-2 bg-gray-50 border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-700">Reddit</a>
+            <a href="https://www.instagram.com/3dballoon/" target="_blank" class="px-4 py-2 bg-[#0f0f0f] border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-400">Instagram</a>
+            <a href="https://www.tumblr.com/balloon3d" target="_blank" class="px-4 py-2 bg-[#0f0f0f] border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-400">Tumblr</a>
+            <a href="https://x.com/Balloon3d" target="_blank" class="px-4 py-2 bg-[#0f0f0f] border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-400">X (Twitter)</a>
+            <a href="https://www.youtube.com/@Balloon3d" target="_blank" class="px-4 py-2 bg-[#0f0f0f] border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-400">YouTube</a>
+            <a href="https://www.quora.com/profile/Balloon-3d" target="_blank" class="px-4 py-2 bg-[#0f0f0f] border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-400">Quora</a>
+            <a href="https://www.pinterest.com/balloon3d/" target="_blank" class="px-4 py-2 bg-[#0f0f0f] border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-400">Pinterest</a>
+            <a href="https://www.behance.net/balloon3d" target="_blank" class="px-4 py-2 bg-[#0f0f0f] border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-400">Behance</a>
+            <a href="https://www.reddit.com/user/Balloon-3d/" target="_blank" class="px-4 py-2 bg-[#0f0f0f] border border-[var(--border)] rounded-lg hover:bg-[var(--orange)] hover:text-white hover:border-[var(--orange)] transition-colors text-gray-400">Reddit</a>
           </div>
         </div>
 
       </div>
 
       <!-- Action Footer -->
-      <div class="bg-gray-50 p-6 sm:px-12 flex flex-col sm:flex-row justify-end gap-3 rounded-b-2xl border-t border-[var(--border)]">
-        <button onclick="document.getElementById('profile-modal').classList.add('hidden')" class="px-6 py-2.5 font-outfit text-sm font-medium text-gray-600 bg-white border border-gray-300 rounded-xl hover:bg-gray-50 transition-colors w-full sm:w-auto">Close Window</button>
-        <button onclick="window.print()" class="px-6 py-2.5 font-outfit text-sm font-medium text-white bg-[var(--dark)] rounded-xl hover:bg-[var(--orange)] transition-colors flex items-center justify-center gap-2 w-full sm:w-auto shadow-md">
+      <div class="bg-[#0f0f0f] p-6 sm:px-12 flex flex-col sm:flex-row justify-end gap-3 rounded-b-2xl border-t border-[var(--border)]">
+        <button onclick="document.getElementById('profile-modal').classList.add('hidden')" class="px-6 py-2.5 font-outfit text-sm font-medium text-white bg-[#0f0f0f] border border-gray-300 rounded-xl hover:bg-white hover:text-black hover:border-[var(--orange)] transition-colors w-full sm:w-auto">Close Window</button>
+        <button onclick="window.print()" class="px-6 py-2.5 font-outfit text-sm font-medium text-white bg-[#0f0f0f] border border-gray-300 rounded-xl hover:bg-white hover:text-black hover:border-[var(--orange)] transition-colors flex items-center justify-center gap-2 w-full sm:w-auto shadow-md">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2-2v4h10z" /></svg>
           Save to PDF / Print
         </button>
@@ -513,12 +513,11 @@
     <a href="#" class="mob-link">Blog</a>
     <a href="#" class="mob-link">Contact</a>
     <button onclick="document.getElementById('profile-modal').classList.remove('hidden'); closeMenu();" class="mob-link flex items-center gap-3">
-      <svg class="w-8 h-8 md:w-10 md:h-10 text-[var(--orange)]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <svg class="w-8 h-8 md:w-10 md:h-10 text-[var(--dark)]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H14" />
       </svg>
       Company Profile
     </button>
-    <div class="mt-4"><a href="#" class="btn-cta text-sm"><span>Get Quote</span></a></div>
   </div>
 
   <!-- NAVBAR -->
@@ -526,31 +525,22 @@
     <div class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-16">
       <a href="#" class="flex flex-col justify-center select-none no-underline group pt-1">
         <div class="flex items-center gap-0.5">
-          <span class="font-display text-[2rem] sm:text-[2.5rem] leading-none tracking-tight text-[var(--dark)]">BALL</span>
-          <img src="./assets/B3d icon.png" alt="Logo" class="h-8 sm:h-10 w-auto object-contain transition-all duration-500 group-hover:-translate-y-1 group-hover:scale-110" />
-          <span class="font-display text-[2rem] sm:text-[2.5rem] leading-none tracking-tight text-[var(--dark)]">ON</span>
+          <img src="./assets/B3d icon.png" alt="Logo" class="h-8 sm:h-12 w-auto object-contain transition-all duration-500 group-hover:-translate-y-1 group-hover:scale-110" />
         </div>
-        <span class="font-outfit self-end text-[0.6rem] sm:text-[0.65rem] tracking-[0.25em] text-gray-400 uppercase mt-[-1px] group-hover:text-[var(--orange)] transition-colors duration-300">You Think We Print</span>
       </a>
-      <nav class="hidden nav:flex items-center gap-8 xl:gap-10 text-base font-poppins font-medium text-gray-700">
+      <nav class="hidden nav:flex items-center gap-8 xl:gap-10 text-base font-poppins font-medium text-[var(--dark)]">
         <a href="#" class="nav-link">About Us</a>
         <a href="#" class="nav-link">Services</a>
         <a href="#" class="nav-link">Industries</a>
         <a href="#" class="nav-link">Our Work</a>
         <a href="#" class="nav-link">Blog</a>
         <a href="#" class="nav-link">Contact</a>
-        <button onclick="document.getElementById('profile-modal').classList.remove('hidden');" title="Company Profile" class="flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--border)] bg-white text-[var(--dark)] hover:text-white hover:bg-[var(--orange)] hover:border-[var(--orange)] transition-all duration-300 shadow-sm hover:shadow-lg group ml-2">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H14" />
-          </svg>
-          <span class="font-outfit text-sm font-medium">Company Profile</span>
-        </button>
       </nav>
       <div class="hidden nav:flex items-center gap-4">
         <div class="lang-dropdown">
           <button
-            style="display:flex;align-items:center;gap:6px;font-family:'Outfit',sans-serif;font-size:.85rem;color:#666;background:none;border:none;cursor:pointer;transition:color .2s;"
-            onmouseover="this.style.color='var(--orange)'" onmouseout="this.style.color='#666'">
+            style="display:flex;align-items:center;gap:6px;font-family:'Outfit',sans-serif;font-size:.85rem;color:var(--dark);background:none;border:none;cursor:pointer;transition:color .2s;"
+            onmouseover="this.style.color='var(--orange)'" onmouseout="this.style.color='var(--dark)'">
             <svg style="width:16px;height:16px;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <circle cx="12" cy="12" r="10" />
               <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z" />
@@ -568,13 +558,13 @@
             <button>Русский (RU)</button>
           </div>
         </div>
-        <a href="#"
-          class="relative overflow-hidden inline-flex items-center gap-3 px-6 py-2.5 font-body font-medium text-[0.75rem] tracking-[0.12em] uppercase no-underline rounded-full z-10 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border-[1.5px] border-[var(--border)] bg-white text-[var(--dark)] cursor-pointer group hover:text-white hover:border-[var(--orange)] hover:-translate-y-1 hover:shadow-xl">
-          <div
-            class="absolute -inset-1 bg-[var(--dark)] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] z-[-1]">
-          </div>
-          <span>Get Quote</span>
-        </a>
+        <button onclick="document.getElementById('profile-modal').classList.remove('hidden');"
+          class="inline-flex items-center gap-2 px-6 py-2.5 font-body font-medium text-[0.75rem] tracking-[0.12em] uppercase no-underline rounded-full z-10 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border border-gray-300 bg-[#0f0f0f] text-white cursor-pointer hover:bg-white hover:text-black hover:border-[var(--orange)] hover:-translate-y-1 hover:shadow-xl w-full sm:w-auto justify-center">
+          <svg class="w-4 h-4 shrink-0 transition-transform hover:scale-110" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H14" />
+          </svg>
+          <span class="whitespace-nowrap z-10 relative">Company Profile</span>
+        </button>
       </div>
       <button id="ham-btn" class="nav:hidden flex flex-col gap-[5px] p-1">
         <span class="ham-line w-6"></span>
@@ -606,7 +596,7 @@
               </div>
             </h1>
             <p
-              class="mx-auto lg:ml-0 lg:mr-auto font-outfit text-gray-600 leading-[1.7] max-w-[480px] text-base opacity-0 animate-[fadeUp_0.8s_0.9s_ease_forwards]">
+              class="mx-auto lg:ml-0 lg:mr-auto font-outfit text-gray-400 leading-[1.7] max-w-[480px] text-base opacity-0 animate-[fadeUp_0.8s_0.9s_ease_forwards]">
               Transform your vision into tangible reality with Balloon 3D Printing. We combine cutting-edge technology
               with expert craftsmanship to deliver precision-engineered solutions for your most ambitious projects.
             </p>      
@@ -716,7 +706,7 @@
   </section>
 
   <!-- INDUSTRIES -->
-  <section id="industries-section" class="section-dark bg-[var(--dark)] py-20 pb-24">
+  <section id="industries-section" class="border-t border-[var(--border)] section-dark bg-[var(--bg)] py-20 pb-24">
     <div class="max-w-7xl mx-auto px-5 sm:px-8">
       <div class="flex flex-col items-center text-center gap-4 mb-14 reveal">
         <h2 class="font-display text-[clamp(2.8rem,7vw,6rem)] leading-none text-white tracking-tight">What We <span class="text-[var(--orange)]">Serve</span></h2>
@@ -735,14 +725,14 @@
             </svg></div>
           <h3 class="font-outfit font-semibold text-white text-2xl mb-3">
             Engineering</h3>
-          <p class="font-outfit text-gray-500 text-sm leading-[1.6] mb-4">
+          <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">
             Advanced functional prototypes for rigorous testing.</p>
           <div class="flex flex-col gap-2 mt-auto">
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Functional
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Functional
               prototyping</span></div>
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Technical
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Technical
               validation models</span></div>
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Rapid
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Rapid
               stress-testing parts</span></div>
           </div>
         </article>
@@ -760,14 +750,14 @@
             </svg></div>
           <h3 class="font-outfit font-semibold text-white text-2xl mb-3">
             Manufacturing</h3>
-          <p class="font-outfit text-gray-500 text-sm leading-[1.6] mb-4">
+          <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">
             Rapid tooling & production workflows for factory operations.</p>
           <div class="flex flex-col gap-2 mt-auto">
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Custom jigs and
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Custom jigs and
               fixtures</span></div>
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Low-volume
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Low-volume
               production runs</span></div>
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Industrial tooling
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Industrial tooling
               solutions</span></div>
           </div>
         </article>
@@ -786,14 +776,14 @@
             </svg></div>
           <h3 class="font-outfit font-semibold text-white text-2xl mb-3">
             Automotive</h3>
-          <p class="font-outfit text-gray-500 text-sm leading-[1.6] mb-4">
+          <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">
             Custom vehicle parts & rapid prototyping for mobility.</p>
           <div class="flex flex-col gap-2 mt-auto">
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Lightweight engine
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Lightweight engine
               parts</span></div>
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Custom interior
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Custom interior
               components</span></div>
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Durable spare
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Durable spare
               parts</span></div>
           </div>
         </article>
@@ -810,14 +800,14 @@
             </svg></div>
           <h3 class="font-outfit font-semibold text-white text-2xl mb-3">
             Aerospace</h3>
-          <p class="font-outfit text-gray-500 text-sm leading-[1.6] mb-4">
+          <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">
             Lightweight, high-precision components for the skies.</p>
           <div class="flex flex-col gap-2 mt-auto">
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>
               High-strength-to-weight parts</span></div>
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Extreme
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Extreme
               temperature resistance</span></div>
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Complex
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Complex
               aerodynamic ducts</span></div>
           </div>
         </article>
@@ -832,14 +822,14 @@
             </svg></div>
           <h3 class="font-outfit font-semibold text-white text-2xl mb-3">
             Education</h3>
-          <p class="font-outfit text-gray-500 text-sm leading-[1.6] mb-4">
+          <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">
             Hands-on learning models & experimental prototypes.</p>
           <div class="flex flex-col gap-2 mt-auto">
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Tangible research
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Tangible research
               aids</span></div>
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Architectural
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Architectural
               replicas</span></div>
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Classroom
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Classroom
               prototypes</span></div>
           </div>
         </article>
@@ -861,14 +851,14 @@
             </svg>
           </div>
           <h3 class="font-outfit font-semibold text-white text-2xl mb-3">All Industries</h3>
-          <p class="font-outfit text-gray-500 text-sm leading-[1.6] mb-4">
+          <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">
             Versatile capabilities across countless other sectors.</p>
           <div class="flex flex-col gap-2 mt-auto">
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Artistic sculptures
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Artistic sculptures
             </span></div>
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Specialized components
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Specialized components
             </span></div>
-            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-600 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Bespoke designs</span></div>
+            <div class="card-bullet flex items-start gap-3 font-outfit text-gray-400 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] mt-[6px] shrink-0 opacity-80"></span><span>Bespoke designs</span></div>
           </div>
         </article>
 
@@ -877,7 +867,7 @@
   </section>
 
   <!-- ABOUT / VIDEO -->
-  <section class="section-light bg-[var(--bg)] py-20 pb-24">
+  <section class="border-t border-[var(--border)] section-light bg-[var(--bg)] py-20 pb-24">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16 lg:py-24">
       <div class="flex flex-col items-center justify-center text-center reveal">
         <div class="flex items-center gap-3 mb-6">
@@ -896,23 +886,27 @@
           accurate and functional 3D models using advanced technology. From design to final production, we ensure
           efficient, cost-effective, and high-standard solutions for all your 3D printing needs.</p>
         <a href="#"
-          class="relative overflow-hidden inline-flex items-center gap-3 px-9 py-4 font-body font-medium text-base tracking-[0.12em] uppercase no-underline rounded-full z-10 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border-[1.5px] border-[var(--border)] bg-white text-[var(--dark)] cursor-pointer group hover:text-white hover:border-[var(--orange)] hover:-translate-y-1 hover:shadow-xl w-fit">
-          <div
-            class="absolute -inset-1 bg-[var(--dark)] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] z-[-1]">
-          </div>
+          class="inline-flex items-center justify-center gap-3 px-9 py-4 font-body font-medium text-base tracking-[0.12em] uppercase no-underline rounded-full z-10 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border border-gray-300 bg-[#0f0f0f] text-white cursor-pointer hover:bg-white hover:text-black hover:border-[var(--orange)] hover:-translate-y-1 hover:shadow-xl w-full sm:w-max">
           <span>Get Quote</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
         </a>
       </div>
-      <div class="reveal w-full mt-8 flex justify-center">
+      <div class="reveal w-full mt-12 flex justify-center px-4 sm:px-0">
         <div
-          class="w-full overflow-hidden aspect-video bg-black relative shadow-[0_24px_64px_rgba(0,0,0,0.15)] border border-[var(--border)]">
-          <video controls class="w-full h-full object-cover"
+          class="w-full max-w-5xl rounded-3xl overflow-hidden aspect-video bg-black relative shadow-[0_0_80px_rgba(249,115,22,0.15)] border-[2px] border-[var(--border)] group transition-all duration-500 hover:shadow-[0_0_100px_rgba(249,115,22,0.25)] hover:border-[var(--orange)]">
+          <!-- Decorative glow behind video -->
+          <div class="absolute inset-0 bg-gradient-to-tr from-[var(--orange)]/20 via-transparent to-transparent opacity-50 z-0"></div>
+          
+          <video controls class="w-full h-full object-cover relative z-10 hover:scale-[1.02] transition-transform duration-700 ease-out"
             poster="https://images.unsplash.com/photo-1631728287514-4113cebd30be?auto=format&fit=crop&q=80&w=800">
             <source src="assets/sample-video.mp4" type="video/mp4">
           </video>
+          
+          <!-- Outer decorative corner brackets (optional aesthetic touch) -->
+          <div class="absolute top-0 left-0 w-16 h-16 border-t-[3px] border-l-[3px] border-[var(--orange)] rounded-tl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 pointer-events-none"></div>
+          <div class="absolute bottom-0 right-0 w-16 h-16 border-b-[3px] border-r-[3px] border-[var(--orange)] rounded-br-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 pointer-events-none"></div>
         </div>
       </div>
     </div>
@@ -920,7 +914,7 @@
   </section>
 
   <!-- PROCESS -->
-  <section class="section-light bg-[#f0eeea] py-20 pb-24 border-t border-[var(--border)]">
+  <section class="section-light bg-[var(--bg)] py-20 pb-24 border-t border-[var(--border)]">
     <div class="max-w-7xl mx-auto px-5 sm:px-8">
       <div class="flex flex-col items-center text-center gap-4 mb-14 reveal">
         <div class="flex items-center gap-3">
@@ -932,7 +926,7 @@
         <div class="flex flex-col items-center w-full gap-4">
           <h2 class="font-display text-[clamp(2.8rem,7vw,6rem)] leading-none text-[var(--dark)] max-w-[800px]">
             The Journey of <span class="text-[var(--orange)]">Creation</span></h2>
-          <p class="font-outfit text-gray-600 max-w-[600px] leading-[1.7] text-[1rem]">Our
+          <p class="font-outfit text-gray-400 max-w-[600px] leading-[1.7] text-[1rem]">Our
             systematic approach ensures every project is executed with precision and excellence from design to quality
             assurance.</p>
         </div>
@@ -940,8 +934,8 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--border)]">
         <!-- 01 -->
         <div
-          class="reveal bg-white border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(0,0,0,0.08)] hover:border-[var(--orange)] group">
-          <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6">
+          class="reveal bg-[#0f0f0f] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(255,255,255,0.03)] hover:border-[var(--orange)] group">
+          <div class="w-12 h-12 bg-[#222222] rounded-lg flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-[var(--orange)]" fill="none" stroke="currentColor" stroke-width="2"
               viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -950,18 +944,18 @@
           </div>
           <div class="relative z-10 pr-16 sm:pr-20">
             <h3 class="font-outfit font-semibold text-2xl mb-3">CAD Design</h3>
-            <p class="font-outfit text-gray-600 text-sm leading-[1.6]">Create detailed digital models with precision
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Create detailed digital models with precision
               specifications</p>
           </div>
           <div
-            class="font-display text-[5rem] leading-none text-[var(--dark)] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[var(--orange)]">
+            class="font-display text-[5rem] leading-none text-[#333] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[var(--orange)]">
             01</div>
         </div>
 
         <!-- 02 -->
         <div
-          class="reveal bg-[#fef9f5] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(0,0,0,0.08)] hover:border-[var(--orange)] group">
-          <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6">
+          class="reveal bg-[#1a1a1a] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(255,255,255,0.03)] hover:border-[var(--orange)] group">
+          <div class="w-12 h-12 bg-[#222222] rounded-lg flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-[var(--orange)]" fill="none" stroke="currentColor" stroke-width="2"
               viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -970,18 +964,18 @@
           </div>
           <div class="relative z-10 pr-16 sm:pr-20">
             <h3 class="font-outfit font-semibold text-2xl mb-3">Material Selection</h3>
-            <p class="font-outfit text-gray-600 text-sm leading-[1.6]">Choose optimal materials for your project
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Choose optimal materials for your project
               requirements</p>
           </div>
           <div
-            class="font-display text-[5rem] leading-none text-[var(--dark)] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[var(--orange)]">
+            class="font-display text-[5rem] leading-none text-[#333] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[var(--orange)]">
             02</div>
         </div>
 
         <!-- 03 -->
         <div
-          class="reveal bg-white border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(0,0,0,0.08)] hover:border-[var(--orange)] group">
-          <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6">
+          class="reveal bg-[#0f0f0f] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(255,255,255,0.03)] hover:border-[var(--orange)] group">
+          <div class="w-12 h-12 bg-[#222222] rounded-lg flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-[var(--orange)]" fill="none" stroke="currentColor" stroke-width="2"
               viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -990,18 +984,18 @@
           </div>
           <div class="relative z-10 pr-16 sm:pr-20">
             <h3 class="font-outfit font-semibold text-2xl mb-3">Machine Setup</h3>
-            <p class="font-outfit text-gray-600 text-sm leading-[1.6]">Configure equipment with precise parameters
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Configure equipment with precise parameters
             </p>
           </div>
           <div
-            class="font-display text-[5rem] leading-none text-[var(--dark)] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[var(--orange)]">
+            class="font-display text-[5rem] leading-none text-[#333] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[var(--orange)]">
             03</div>
         </div>
 
         <!-- 04 -->
         <div
-          class="reveal bg-[#fef9f5] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(0,0,0,0.08)] hover:border-[var(--orange)] group">
-          <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6">
+          class="reveal bg-[#1a1a1a] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(255,255,255,0.03)] hover:border-[var(--orange)] group">
+          <div class="w-12 h-12 bg-[#222222] rounded-lg flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-[var(--orange)]" fill="none" stroke="currentColor" stroke-width="2"
               viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -1010,18 +1004,18 @@
           </div>
           <div class="relative z-10 pr-16 sm:pr-20">
             <h3 class="font-outfit font-semibold text-2xl mb-3">Build Process</h3>
-            <p class="font-outfit text-gray-600 text-sm leading-[1.6]">Execute 3D printing with real-time monitoring
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Execute 3D printing with real-time monitoring
             </p>
           </div>
           <div
-            class="font-display text-[5rem] leading-none text-[var(--dark)] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[var(--orange)]">
+            class="font-display text-[5rem] leading-none text-[#333] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[var(--orange)]">
             04</div>
         </div>
 
         <!-- 05 -->
         <div
-          class="reveal bg-white border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(0,0,0,0.08)] hover:border-[var(--orange)] group">
-          <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6">
+          class="reveal bg-[#0f0f0f] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(255,255,255,0.03)] hover:border-[var(--orange)] group">
+          <div class="w-12 h-12 bg-[#222222] rounded-lg flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-[var(--orange)]" fill="none" stroke="currentColor" stroke-width="2"
               viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -1030,17 +1024,17 @@
           </div>
           <div class="relative z-10 pr-16 sm:pr-20">
             <h3 class="font-outfit font-semibold text-2xl mb-3">Post-Processing</h3>
-            <p class="font-outfit text-gray-600 text-sm leading-[1.6]">Refine and finish your 3D printed parts</p>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Refine and finish your 3D printed parts</p>
           </div>
           <div
-            class="font-display text-[5rem] leading-none text-[var(--dark)] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[var(--orange)]">
+            class="font-display text-[5rem] leading-none text-[#333] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[var(--orange)]">
             05</div>
         </div>
 
         <!-- 06 -->
         <div
-          class="reveal bg-[#fef9f5] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(0,0,0,0.08)] hover:border-[var(--orange)] group">
-          <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6">
+          class="reveal bg-[#1a1a1a] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(255,255,255,0.03)] hover:border-[var(--orange)] group">
+          <div class="w-12 h-12 bg-[#222222] rounded-lg flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-[var(--orange)]" fill="none" stroke="currentColor" stroke-width="2"
               viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -1048,11 +1042,11 @@
           </div>
           <div class="relative z-10 pr-16 sm:pr-20">
             <h3 class="font-outfit font-semibold text-2xl mb-3">Quality Assurance</h3>
-            <p class="font-outfit text-gray-600 text-sm leading-[1.6]">Deliver exceptional results meeting your
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Deliver exceptional results meeting your
               specifications</p>
           </div>
           <div
-            class="font-display text-[5rem] leading-none text-[var(--dark)] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[var(--orange)]">
+            class="font-display text-[5rem] leading-none text-[#333] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[var(--orange)]">
             06</div>
         </div>
       </div>
@@ -1060,24 +1054,24 @@
   </section>
 
   <!-- OUR CLIENTS -->
-  <section class="section-light bg-white py-16 border-t border-[var(--border)] overflow-hidden">
+  <section class="section-light bg-[#0f0f0f] py-16 border-t border-[var(--border)] overflow-hidden">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 mb-10 flex flex-col items-center reveal">
       <h2 class="font-display text-[clamp(2.8rem,7vw,6rem)] leading-none text-[var(--dark)] tracking-tight text-center">Our Trusted <span class="text-[var(--orange)]">Clients</span></h2>
     </div>
     <div class="marquee-track flex items-center opacity-70 hover:opacity-100 transition-opacity duration-300 mt-8">
       <div class="flex items-center gap-16 px-8">
-        <span class="font-display text-4xl text-gray-400">CLIENT ALPHA</span>
-        <span class="font-display text-4xl text-gray-400">CLIENT BETA</span>
-        <span class="font-display text-4xl text-gray-400">CLIENT GAMMA</span>
-        <span class="font-display text-4xl text-gray-400">CLIENT DELTA</span>
-        <span class="font-display text-4xl text-gray-400">CLIENT EPSILON</span>
+        <span class="font-display text-gray-400xl text-gray-400">CLIENT ALPHA</span>
+        <span class="font-display text-gray-400xl text-gray-400">CLIENT BETA</span>
+        <span class="font-display text-gray-400xl text-gray-400">CLIENT GAMMA</span>
+        <span class="font-display text-gray-400xl text-gray-400">CLIENT DELTA</span>
+        <span class="font-display text-gray-400xl text-gray-400">CLIENT EPSILON</span>
       </div>
       <div class="flex items-center gap-16 px-8">
-        <span class="font-display text-4xl text-gray-400">CLIENT ALPHA</span>
-        <span class="font-display text-4xl text-gray-400">CLIENT BETA</span>
-        <span class="font-display text-4xl text-gray-400">CLIENT GAMMA</span>
-        <span class="font-display text-4xl text-gray-400">CLIENT DELTA</span>
-        <span class="font-display text-4xl text-gray-400">CLIENT EPSILON</span>
+        <span class="font-display text-gray-400xl text-gray-400">CLIENT ALPHA</span>
+        <span class="font-display text-gray-400xl text-gray-400">CLIENT BETA</span>
+        <span class="font-display text-gray-400xl text-gray-400">CLIENT GAMMA</span>
+        <span class="font-display text-gray-400xl text-gray-400">CLIENT DELTA</span>
+        <span class="font-display text-gray-400xl text-gray-400">CLIENT EPSILON</span>
       </div>
     </div>
   </section>
@@ -1095,13 +1089,10 @@
           </div>
           <h2 class="font-display text-[clamp(2.8rem,6vw,5.5rem)] leading-none text-[var(--dark)] tracking-tight">Our
             Work</h2>
-          <p class="font-outfit text-gray-500 leading-[1.7] text-base max-w-[600px] mt-2 mb-2">Showcasing innovation, precision, and excellence through advanced prototypes, creative solutions, and industrial applications.</p>
+          <p class="font-outfit text-gray-400 leading-[1.7] text-base max-w-[600px] mt-2 mb-2">Showcasing innovation, precision, and excellence through advanced prototypes, creative solutions, and industrial applications.</p>
         </div>
         <a href="our-work.html"
-          class="relative overflow-hidden inline-flex items-center gap-3 px-9 py-4 font-body font-medium text-base tracking-[0.12em] uppercase no-underline rounded-full z-10 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border-[1.5px] border-[var(--border)] bg-white text-[var(--dark)] cursor-pointer group hover:text-white hover:border-[var(--orange)] hover:-translate-y-1 hover:shadow-xl">
-          <div
-            class="absolute -inset-1 bg-[var(--dark)] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] z-[-1]">
-          </div>
+          class="inline-flex items-center justify-center gap-3 px-9 py-4 font-body font-medium text-base tracking-[0.12em] uppercase no-underline rounded-full z-10 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border border-gray-300 bg-[#0f0f0f] text-white cursor-pointer hover:bg-white hover:text-black hover:border-[var(--orange)] hover:-translate-y-1 hover:shadow-xl w-full sm:w-max">
           <span>View All</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -1197,12 +1188,9 @@
         </div>
       </div>
 
-      <div class="mt-8 flex justify-center sm:hidden">
+      <div class="mt-8 flex justify-center sm:hidden w-full">
         <a href="our-work.html"
-          class="relative overflow-hidden inline-flex items-center gap-3 px-8 py-3 font-body font-medium text-sm tracking-[0.12em] uppercase no-underline rounded-full border-[1.5px] border-[var(--border)] bg-white text-[var(--dark)] cursor-pointer group hover:text-white hover:border-[var(--orange)]">
-          <div
-            class="absolute -inset-1 bg-[var(--dark)] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] z-[-1]">
-          </div>
+          class="inline-flex items-center justify-center gap-3 px-8 py-3 font-body font-medium text-sm tracking-[0.12em] uppercase no-underline rounded-full border border-gray-300 bg-[#0f0f0f] text-white cursor-pointer hover:bg-white hover:text-black hover:border-[var(--orange)] w-full">
           <span>View All Projects</span>
         </a>
       </div>
@@ -1210,7 +1198,7 @@
   </section>
 
   <!-- TECHNOLOGY -->
-  <section class="section-dark bg-[var(--dark)] py-20 pb-24">
+  <section class="border-t border-[var(--border)] section-dark bg-[var(--bg)] py-20 pb-24">
     <div class="max-w-7xl mx-auto px-5 sm:px-8">
       <div class="flex flex-col items-center justify-center text-center gap-6 mb-14 reveal">
         <div class="flex flex-col items-center gap-3">
@@ -1238,19 +1226,19 @@
             <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-6">Cost-effective printing using thermoplastic
               filaments for prototypes and functional parts.</p>
             <ul class="flex flex-col gap-2">
-              <li class="font-outfit text-[#777] text-sm flex items-center gap-2">
+              <li class="font-outfit text-gray-400 text-sm flex items-center gap-2">
                 <span class="text-[var(--orange)]">→</span> Affordable prototyping
               </li>
-              <li class="font-outfit text-[#777] text-sm flex items-center gap-2">
+              <li class="font-outfit text-gray-400 text-sm flex items-center gap-2">
                 <span class="text-[var(--orange)]">→</span> Wide material options
               </li>
-              <li class="font-outfit text-[#777] text-sm flex items-center gap-2">
+              <li class="font-outfit text-gray-400 text-sm flex items-center gap-2">
                 <span class="text-[var(--orange)]">→</span> Strong functional parts
               </li>
             </ul>
           </div>
           <div
-            class="font-display text-[5rem] leading-none text-[#1f1f1f] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[#2a2a2a]">
+            class="font-display text-[5rem] leading-none text-gray-700 absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-gray-500">
             01</div>
         </div>
 
@@ -1265,19 +1253,19 @@
             <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-6">Powder-based printing that creates strong,
               durable, and complex geometries without support structures.</p>
             <ul class="flex flex-col gap-2">
-              <li class="font-outfit text-[#777] text-sm flex items-center gap-2">
+              <li class="font-outfit text-gray-400 text-sm flex items-center gap-2">
                 <span class="text-[var(--orange)]">→</span> No support structures
               </li>
-              <li class="font-outfit text-[#777] text-sm flex items-center gap-2">
+              <li class="font-outfit text-gray-400 text-sm flex items-center gap-2">
                 <span class="text-[var(--orange)]">→</span> High strength
               </li>
-              <li class="font-outfit text-[#777] text-sm flex items-center gap-2">
+              <li class="font-outfit text-gray-400 text-sm flex items-center gap-2">
                 <span class="text-[var(--orange)]">→</span> Complex geometries
               </li>
             </ul>
           </div>
           <div
-            class="font-display text-[5rem] leading-none text-[#1f1f1f] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[#2a2a2a]">
+            class="font-display text-[5rem] leading-none text-gray-700 absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-gray-500">
             02</div>
         </div>
 
@@ -1292,19 +1280,19 @@
             <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-6">High-precision resin printing for smooth
               surfaces and fine details.</p>
             <ul class="flex flex-col gap-2">
-              <li class="font-outfit text-[#777] text-sm flex items-center gap-2">
+              <li class="font-outfit text-gray-400 text-sm flex items-center gap-2">
                 <span class="text-[var(--orange)]">→</span> High accuracy
               </li>
-              <li class="font-outfit text-[#777] text-sm flex items-center gap-2">
+              <li class="font-outfit text-gray-400 text-sm flex items-center gap-2">
                 <span class="text-[var(--orange)]">→</span> Smooth surface finish
               </li>
-              <li class="font-outfit text-[#777] text-sm flex items-center gap-2">
+              <li class="font-outfit text-gray-400 text-sm flex items-center gap-2">
                 <span class="text-[var(--orange)]">→</span> Ideal for detailed models
               </li>
             </ul>
           </div>
           <div
-            class="font-display text-[5rem] leading-none text-[#1f1f1f] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[#2a2a2a]">
+            class="font-display text-[5rem] leading-none text-gray-700 absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-gray-500">
             03</div>
         </div>
 
@@ -1319,19 +1307,19 @@
             <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-6">Accurate digital capture of physical objects
               for reverse engineering and replication.</p>
             <ul class="flex flex-col gap-2">
-              <li class="font-outfit text-[#777] text-sm flex items-center gap-2">
+              <li class="font-outfit text-gray-400 text-sm flex items-center gap-2">
                 <span class="text-[var(--orange)]">→</span> High precision scanning
               </li>
-              <li class="font-outfit text-[#777] text-sm flex items-center gap-2">
+              <li class="font-outfit text-gray-400 text-sm flex items-center gap-2">
                 <span class="text-[var(--orange)]">→</span> Reverse engineering
               </li>
-              <li class="font-outfit text-[#777] text-sm flex items-center gap-2">
+              <li class="font-outfit text-gray-400 text-sm flex items-center gap-2">
                 <span class="text-[var(--orange)]">→</span> Digital archiving
               </li>
             </ul>
           </div>
           <div
-            class="font-display text-[5rem] leading-none text-[#1f1f1f] absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-[#2a2a2a]">
+            class="font-display text-[5rem] leading-none text-gray-700 absolute bottom-4 right-6 transition-colors duration-300 group-hover:text-gray-500">
             04</div>
         </div>
       </div>
@@ -1340,7 +1328,7 @@
   </section>
 
   <!-- CTA BANNER -->
-  <section class="section-light bg-white py-24 border-y border-[var(--border)]">
+  <section class="section-light bg-[#0f0f0f] py-24 border-y border-[var(--border)]">
     <div class="max-w-4xl mx-auto px-5 sm:px-8 text-center flex flex-col items-center">
       <div class="flex flex-col items-center justify-center gap-8 reveal">
         <div class="flex flex-col gap-4 text-center items-center">
@@ -1351,15 +1339,12 @@
           </div>
           <h2 class="font-display text-[clamp(3rem,7vw,5.5rem)] leading-none text-[var(--dark)] tracking-tight mt-2">
             Ready to Print<br />Your Vision?</h2>
-          <p class="font-outfit text-gray-500 leading-[1.7] text-base sm:text-lg max-w-[540px]">
+          <p class="font-outfit text-gray-400 leading-[1.7] text-base sm:text-lg max-w-[540px]">
             Tell us about your project and our team will get back to you within 24 hours with a custom quote.</p>
         </div>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center mt-2">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mt-2 w-full">
           <a href="#"
-            class="relative overflow-hidden inline-flex items-center gap-3 px-9 py-4 font-body font-medium text-base tracking-[0.12em] uppercase no-underline rounded-full z-10 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border-[1.5px] border-[var(--border)] bg-white text-[var(--dark)] cursor-pointer group hover:text-white hover:border-[var(--orange)] hover:-translate-y-1 hover:shadow-xl">
-            <div
-              class="absolute -inset-1 bg-[var(--dark)] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] z-[-1]">
-            </div>
+            class="inline-flex items-center justify-center gap-3 px-9 py-4 font-body font-medium text-base tracking-[0.12em] uppercase no-underline rounded-full z-10 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border border-gray-300 bg-[#0f0f0f] text-white cursor-pointer hover:bg-white hover:text-black hover:border-[var(--orange)] hover:-translate-y-1 hover:shadow-xl w-full sm:w-auto">
             <span>Get a Quote</span>
             <svg class="w-4 h-4 transition-colors" fill="none" stroke="currentColor" stroke-width="2"
               viewBox="0 0 24 24">
@@ -1367,10 +1352,7 @@
             </svg>
           </a>
           <a href="#"
-            class="relative overflow-hidden inline-flex items-center gap-3 px-9 py-4 font-body font-medium text-base tracking-[0.12em] uppercase no-underline rounded-full z-10 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border-[1.5px] border-[var(--border)] bg-white text-[var(--dark)] cursor-pointer group hover:text-white hover:border-[var(--orange)] hover:-translate-y-1 hover:shadow-xl">
-            <div
-              class="absolute -inset-1 bg-[var(--dark)] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] z-[-1]">
-            </div>
+            class="inline-flex items-center justify-center gap-3 px-9 py-4 font-body font-medium text-base tracking-[0.12em] uppercase no-underline rounded-full z-10 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border border-gray-300 bg-[#0f0f0f] text-white cursor-pointer hover:bg-white hover:text-black hover:border-[var(--orange)] hover:-translate-y-1 hover:shadow-xl w-full sm:w-auto">
             <span>View Our Work</span>
           </a>
         </div>
@@ -1379,14 +1361,12 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="section-dark bg-[var(--dark)] text-white pt-16 pb-8 border-t border-[#1f1f1f]">
+  <footer class="border-t border-[var(--border)] section-dark bg-[var(--bg)] text-white pt-16 pb-8 border-t border-[#1f1f1f]">
     <div class="max-w-7xl mx-auto px-5 sm:px-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-[#1f1f1f]">
         <div class="flex flex-col gap-5">
           <div class="flex items-center gap-2.5">
-            <svg class="w-10 h-10" fill="none" stroke="white" stroke-width="1.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2C8.686 2 6 4.09 6 6.667 6 8.358 7.316 9.845 8.94 10.61c.42.203.71.558.75 1.014.072.846-.426 2.376-.426 2.376-2.502.946-2.484 2.898-2.484 2.898L9.014 20s.205 2 2.986 2c2.78 0 2.986-2 2.986-2l2.234-3.102c0 0 .018-1.952-2.484-2.898 0 0-.498-1.53-.426-2.376.04-.456.33-.811.75-1.014C16.684 9.845 18 8.358 18 6.667 18 4.09 15.314 2 12 2z" />
-            </svg>
+              <img src="./assets/B3d icon.png" alt="Logo" class="h-6 sm:h-8 w-auto object-contain transition-all duration-500 group-hover:-translate-y-1 group-hover:scale-110" />
             <div>
               <div class="font-display text-xl text-white tracking-tight">
                 BALLOON<span class="text-[var(--orange)]">3D</span></div>
@@ -1394,57 +1374,53 @@
                 Precision Printing</div>
             </div>
           </div>
-          <p class="font-outfit text-gray-500 text-sm leading-[1.7]">Transforming ideas into
+          <p class="font-outfit text-gray-400 text-sm leading-[1.7]">Transforming ideas into
             reality with cutting-edge 3D printing technology.</p>
           <div class="flex flex-wrap items-center gap-2 mt-2">
             <!-- Instagram -->
             <a href="https://www.instagram.com/3dballoon/" target="_blank"
-              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-500 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
+              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-400 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
               </svg></a>
             <!-- Tumblr -->
             <a href="https://www.tumblr.com/balloon3d" target="_blank"
-              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-500 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
+              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-400 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.091c.753.006 1.488-.27 2.062-.776l1.323 3.126c-1.503 1.258-3.328 1.944-5.26 1.996h-.357z" />
               </svg></a>
             <!-- X (Twitter) -->
             <a href="https://x.com/Balloon3d" target="_blank"
-              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-500 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
+              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-400 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
               </svg></a>
             <!-- YouTube -->
             <a href="https://www.youtube.com/@Balloon3d" target="_blank"
-              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-500 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
+              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-400 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
               </svg></a>
             <!-- Quora -->
             <a href="https://www.quora.com/profile/Balloon-3d" target="_blank"
-              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-500 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M11.956 0c-6.602 0-11.956 4.965-11.956 12.015 0 6.136 4.093 11.238 9.531 11.895l1.9-2.32c-.783-.243-1.523-.623-2.193-1.127 4.22-.095 8.163-2.186 10.37-5.59 1.109-1.71 1.764-3.774 1.764-5.858 0-7.05-5.354-12.015-11.956-12.015h2.54z"/>
-              </svg></a>
+              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-400 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M14.4484 20.125C15.0078 20.7812 16.188 20.9747 16.788 21C19.7125 20.924 20.2151 18.3701 19.9305 17.0456C18.9678 19.5171 17.0848 18.2255 16.5882 17.4829C16.0915 16.7403 15.5043 15.6705 15.0078 14.9924C12.5374 11.7072 9.71584 13.0152 8.61385 14.0798C11.5052 13.4935 12.9076 16.7577 13.2474 18.4631C12.6494 18.6298 12.0219 18.7186 11.3749 18.7186C7.30185 18.7186 4 15.1999 4 10.8593C4 6.51873 7.30185 3 11.3749 3C15.4479 3 18.7498 6.51873 18.7498 10.8593C18.7498 12.6423 18.4926 13.8375 17.5537 15.1562C17.1683 14.5337 16.0739 13.05 15.4636 12.5938C15.8632 9.72936 15.0078 4.55165 11.3749 4.4981C7.24786 4.43726 6.89425 10.1255 7.23333 12.9772" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+            </a>
             <!-- Pinterest -->
             <a href="https://www.pinterest.com/balloon3d/" target="_blank"
-              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-500 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345l-.288 1.17c-.043.18-.146.223-.332.138-1.242-.578-2.025-2.396-2.025-3.847 0-3.14 2.278-6.027 6.577-6.027 3.456 0 6.104 2.457 6.104 5.733 0 3.43-2.164 6.192-5.176 6.192-1.008 0-1.956-.523-2.28-1.144l-.62 2.378c-.226.861-.84 1.936-1.253 2.593 1.1.332 2.261.51 3.473.51 6.621 0 11.988-5.367 11.988-11.987C24.005 5.367 18.638 0 12.017 0z" />
-              </svg></a>
+              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-400 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-pinterest"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 3.34a10 10 0 0 1 -8.512 18.023l2.364 -5.315a3.5 3.5 0 0 0 2.398 .952c2.708 0 4.75 -2.089 4.75 -5a6 6 0 1 0 -11.64 2.041a1 1 0 1 0 1.88 -.682a4 4 0 1 1 7.76 -1.36c0 1.818 -1.156 3.001 -2.75 3.001c-.609 0 -1.153 -.361 -1.478 -1.022l1.142 -2.572a1 1 0 0 0 -1.828 -.812l-4.392 9.882a10 10 0 0 1 -4.694 -8.476l.005 -.324a10 10 0 0 1 14.995 -8.336" /></svg>
+            </a>
             <!-- Behance -->
             <a href="https://www.behance.net/balloon3d" target="_blank"
-              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-500 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M22 7h-7v-2h7v2zM11.5 14.67c0-.28 0-.58-.02-.85H7.7c.05 1.57 1.25 1.77 2 1.77 1.06 0 1.5-.47 1.78-.96h2.2c-.37 1.6-1.87 2.87-4 2.87-2.73 0-3.96-2-3.96-4.5s1.42-4.5 3.96-4.5c2.4 0 3.86 1.83 3.82 4.14v2.03h-2zm-3.8-2.61h3.44c-.06-1.17-.86-2-1.7-2-.84 0-1.63.8-1.74 2zM6.55 12h-4v5.5H.5v-11h4.15c2.51 0 3.3 1.48 3.3 2.76 0 1.16-.76 2-1.8 2.2 1.28.2 2.25 1.05 2.25 2.5 0 1.92-1.46 3.04-3.85 3.04H.5v-2h2.55c1.47 0 1.95-.7 1.95-1.5 0-.8-.48-1.5-1.95-1.5H.5v-2h2.55c1.47 0 1.7-.6 1.7-1.3 0-.7-.25-1.2-1.7-1.2v-2z" />
-              </svg></a>
+              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-400 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-behance"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" /><path d="M3 12l4.5 0" /><path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" /><path d="M16 6l3 0" /></svg>
+            </a>
             <!-- Reddit -->
             <a href="https://www.reddit.com/user/Balloon-3d/" target="_blank"
-              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-500 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 11.5c0-.98.8-1.78 1.78-1.78.3 0 .58.07.83.2-.26.28-.5.58-.7.9-.6.28-1.18.66-1.7 1.1-.13-.13-.2-.3-.2-.42zm9.7 9.5c-4.66 0-8.5-2.68-8.5-6 0-.2.03-.4.07-.6C4.85 15.65 7.24 16.5 12 16.5s7.15-.85 8.43-2.1c.04.2.07.4.07.6 0 3.32-3.84 6-8.5 6zm7.22-8.58c-.2.32-.44.62-.7.9.26-.13.53-.2.83-.2.98 0 1.78.8 1.78 1.78 0 .12-.07.28-.2.42-.52-.44-1.1-.82-1.7-1.1zm-10.22 1.58c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm8 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-5.63 3.42c1.22 1.2 3.03 1.2 3.26 1.2.22 0 2.04 0 3.26-1.2.23-.2.23-.55 0-.77-.23-.23-.6-.23-.8 0-.96.95-2.02.95-2.46.95-.44 0-1.5 0-2.46-.95-.2-.23-.57-.23-.8 0-.2.22-.2.57.03.77z"/>
-              </svg></a>
+              class="w-[38px] h-[38px] rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-400 transition-all duration-300 hover:border-[var(--orange)] hover:text-[var(--orange)]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-reddit"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14l.999 0" /><path d="M12 8l1 -5l6 1" /><path d="M18 4a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M8.5 13a.5 .5 0 1 0 1 0a.5 .5 0 1 0 -1 0" fill="currentColor" /><path d="M14.5 13a.5 .5 0 1 0 1 0a.5 .5 0 1 0 -1 0" fill="currentColor" /><path d="M10 17c.667 .333 1.333 .5 2 .5s1.333 -.167 2 -.5" /></svg>
+            </a>
           </div>
         </div>
         <div class="flex flex-col gap-5">
@@ -1452,26 +1428,26 @@
             Quick Links</h3>
           <ul class="flex flex-col gap-3">
             <li><a href="#"
-                class="font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Home</a>
+                class="font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Home</a>
             </li>
             <li><a href="#"
-                class="font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">About
+                class="font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">About
                 Us</a></li>
             <li><a href="#"
-                class="font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Services</a>
+                class="font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Services</a>
             </li>
             <li><a href="#"
-                class="font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Industries</a>
+                class="font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Industries</a>
             </li>
             <li><a href="#"
-                class="font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Our
+                class="font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Our
                 Work</a>
             </li>
             <li><a href="#"
-                class="font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Blog</a>
+                class="font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Blog</a>
             </li>
             <li><a href="#"
-                class="font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Contact
+                class="font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Contact
                 Us</a></li>
           </ul>
         </div>
@@ -1480,22 +1456,22 @@
             Services</h3>
           <ul class="flex flex-col gap-3">
             <li><a href="#"
-                class="font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Rapid
+                class="font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Rapid
                 Prototyping</a></li>
             <li><a href="#"
-                class="font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">3D
+                class="font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">3D
                 Laser
                 Scanning</a></li>
             <li><a href="#"
-                class="font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">3D
+                class="font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">3D
                 Modelling</a>
             </li>
             <li><a href="#"
-                class="font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Vacuum
+                class="font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Vacuum
                 Casting</a>
             </li>
             <li><a href="#"
-                class="font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Industrial
+                class="font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">Industrial
                 Design</a></li>
           </ul>
         </div>
@@ -1504,7 +1480,7 @@
             Get In Touch</h3>
           <div class="flex flex-col gap-4">
             <a href="mailto:print@3dwalla.com"
-              class="flex items-start gap-3 font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">
+              class="flex items-start gap-3 font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">
               <svg class="w-4 h-4 mt-0.5 shrink-0 text-[var(--orange)]" fill="none" stroke="currentColor"
                 viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1513,7 +1489,7 @@
               info@balloon3d.com
             </a>
             <a href="tel:+919833933953"
-              class="flex items-start gap-3 font-outfit text-sm text-gray-500 no-underline transition-colors duration-200 hover:text-[var(--orange)]">
+              class="flex items-start gap-3 font-outfit text-sm text-gray-400 no-underline transition-colors duration-200 hover:text-[var(--orange)]">
               <svg class="w-4 h-4 mt-0.5 shrink-0 text-[var(--orange)]" fill="none" stroke="currentColor"
                 viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1521,13 +1497,13 @@
               </svg>
               +91 72198 55584
             </a>
-            <div class="flex items-start gap-3 font-outfit text-sm text-gray-500">
+            <div class="flex items-start gap-3 font-outfit text-sm text-gray-400">
               <svg class="w-4 h-4 mt-0.5 shrink-0 text-[var(--orange)]" fill="none" stroke="currentColor"
                 viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              The landmark is the Bank of Baroda, 108/109 Sambhav Industries, Navghar Road, Vasai East, Mumbai, Maharashtra 401202, India
+              Landmark: Bank of Baroda, 108/109 Sambhav Industries, Navghar Road, Vasai East, Mumbai, Maharashtra 401202, India
             </div>
           </div>
         </div>
