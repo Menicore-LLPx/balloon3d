@@ -593,6 +593,7 @@
       0% {
         background-position: 0 0, 0 0, 0% 50%;
       }
+
       100% {
         background-position: 40px 40px, 40px 40px, 100% 50%;
       }
@@ -606,7 +607,7 @@
       background-size: 40px 40px, 40px 40px, 100% 100%;
       animation: gridMove 15s linear infinite;
     }
-    
+
     .hero-grid-bg::after {
       content: '';
       position: absolute;
@@ -651,36 +652,97 @@
 
     /* ─── Premium SVG & Motion Graphics Keyframes ─── */
     @keyframes spinSlow {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
     }
+
     @keyframes spinSlowReverse {
-      from { transform: rotate(360deg); }
-      to { transform: rotate(0deg); }
+      from {
+        transform: rotate(360deg);
+      }
+
+      to {
+        transform: rotate(0deg);
+      }
     }
+
     @keyframes radarPulse {
-      0% { transform: scale(0.8); opacity: 0; }
-      50% { opacity: 0.5; }
-      100% { transform: scale(1.5); opacity: 0; }
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+
+      100% {
+        transform: scale(1.5);
+        opacity: 0;
+      }
     }
+
     @keyframes dashDraw {
-      from { stroke-dashoffset: 1000; }
-      to { stroke-dashoffset: 0; }
+      from {
+        stroke-dashoffset: 1000;
+      }
+
+      to {
+        stroke-dashoffset: 0;
+      }
     }
+
     @keyframes floatTech {
-      0%, 100% { transform: translateY(0px) translateX(0px); }
-      50% { transform: translateY(-10px) translateX(5px); }
+
+      0%,
+      100% {
+        transform: translateY(0px) translateX(0px);
+      }
+
+      50% {
+        transform: translateY(-10px) translateX(5px);
+      }
     }
+
     @keyframes pulseOpacity {
-      0%, 100% { opacity: 0.3; }
-      50% { opacity: 0.8; }
+
+      0%,
+      100% {
+        opacity: 0.3;
+      }
+
+      50% {
+        opacity: 0.8;
+      }
     }
+
     @keyframes scanSweepVertical {
-      0% { top: 0%; opacity: 0; }
-      10% { opacity: 0.5; }
-      50% { opacity: 1; }
-      90% { opacity: 0.5; }
-      100% { top: 100%; opacity: 0; }
+      0% {
+        top: 0%;
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      90% {
+        opacity: 0.5;
+      }
+
+      100% {
+        top: 100%;
+        opacity: 0;
+      }
     }
 
     /* ─── About Section Premium Enhancements ─── */
@@ -788,6 +850,7 @@
         background: white;
       }
     }
+
     /* ─── Global Futuristic Enhancements ─── */
     .glass-panel {
       background: rgba(17, 17, 17, 0.75);
@@ -796,24 +859,29 @@
       border: 1px solid rgba(255, 255, 255, 0.05);
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
     }
-    
+
     .tech-glow-text {
       text-shadow: 0 0 20px rgba(249, 115, 22, 0.5), 0 0 40px rgba(249, 115, 22, 0.2);
     }
-    
+
     .hud-border {
       position: relative;
     }
+
     .hud-border::before {
       content: '';
       position: absolute;
-      top: -1px; left: -1px; right: -1px; bottom: -1px;
+      top: -1px;
+      left: -1px;
+      right: -1px;
+      bottom: -1px;
       border: 1px solid rgba(249, 115, 22, 0.3);
       pointer-events: none;
       clip-path: polygon(0 15px, 15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px));
       transition: all 0.5s ease;
       z-index: 10;
     }
+
     .hud-border:hover::before {
       border-color: var(--orange);
       background: rgba(249, 115, 22, 0.05);
@@ -894,22 +962,34 @@
   </div>
 
   <!-- NAVBAR -->
-  <header class="fixed top-0 left-0 right-0 z-50 glass-panel border-b-0 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[1px] before:bg-gradient-to-r before:from-transparent before:via-[var(--orange)] before:to-transparent before:opacity-30">
+  <header
+    class="fixed top-0 left-0 right-0 z-50 glass-panel border-b-0 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[1px] before:bg-gradient-to-r before:from-transparent before:via-[var(--orange)] before:to-transparent before:opacity-30">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-20">
       <a href="#" class="flex flex-col justify-center select-none no-underline group pt-1 relative">
-        <div class="absolute -inset-4 bg-[var(--orange)]/10 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div
+          class="absolute -inset-4 bg-[var(--orange)]/10 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        </div>
         <div class="flex items-center gap-0.5 relative z-10">
           <img src="./assets/B3d icon.png" alt="Logo"
             class="h-8 sm:h-12 w-auto object-contain transition-all duration-500 group-hover:-translate-y-1 group-hover:scale-110" />
         </div>
       </a>
-      <nav class="hidden nav:flex items-center gap-8 xl:gap-10 text-sm font-outfit uppercase tracking-widest text-gray-300">
-        <a href="#" class="nav-link hover:text-[var(--orange)] hover:text-shadow-[0_0_10px_rgba(249,115,22,0.5)] transition-all duration-300">About Us</a>
-        <a href="#" class="nav-link hover:text-[var(--orange)] hover:text-shadow-[0_0_10px_rgba(249,115,22,0.5)] transition-all duration-300">Services</a>
-        <a href="#" class="nav-link hover:text-[var(--orange)] hover:text-shadow-[0_0_10px_rgba(249,115,22,0.5)] transition-all duration-300">Industries</a>
-        <a href="#" class="nav-link hover:text-[var(--orange)] hover:text-shadow-[0_0_10px_rgba(249,115,22,0.5)] transition-all duration-300">Our Work</a>
-        <a href="#" class="nav-link hover:text-[var(--orange)] hover:text-shadow-[0_0_10px_rgba(249,115,22,0.5)] transition-all duration-300">Blog</a>
-        <a href="#" class="nav-link hover:text-[var(--orange)] hover:text-shadow-[0_0_10px_rgba(249,115,22,0.5)] transition-all duration-300">Contact</a>
+      <nav
+        class="hidden nav:flex items-center gap-8 xl:gap-10 text-sm font-outfit uppercase tracking-widest text-gray-300">
+        <a href="#"
+          class="nav-link hover:text-[var(--orange)] hover:text-shadow-[0_0_10px_rgba(249,115,22,0.5)] transition-all duration-300">About
+          Us</a>
+        <a href="#"
+          class="nav-link hover:text-[var(--orange)] hover:text-shadow-[0_0_10px_rgba(249,115,22,0.5)] transition-all duration-300">Services</a>
+        <a href="#"
+          class="nav-link hover:text-[var(--orange)] hover:text-shadow-[0_0_10px_rgba(249,115,22,0.5)] transition-all duration-300">Industries</a>
+        <a href="#"
+          class="nav-link hover:text-[var(--orange)] hover:text-shadow-[0_0_10px_rgba(249,115,22,0.5)] transition-all duration-300">Our
+          Work</a>
+        <a href="#"
+          class="nav-link hover:text-[var(--orange)] hover:text-shadow-[0_0_10px_rgba(249,115,22,0.5)] transition-all duration-300">Blog</a>
+        <a href="#"
+          class="nav-link hover:text-[var(--orange)] hover:text-shadow-[0_0_10px_rgba(249,115,22,0.5)] transition-all duration-300">Contact</a>
       </nav>
       <div class="hidden nav:flex items-center gap-4">
         <div class="lang-dropdown">
@@ -962,31 +1042,46 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           <div class="lg:col-span-6 flex flex-col gap-6 text-center lg:text-left">
             <!-- Precision badge & Technical Details -->
-            <div class="flex items-center gap-4 justify-center lg:justify-start opacity-0 animate-[fadeUp_0.6s_0.2s_ease_forwards]">
-              <div class="flex items-center gap-2 bg-[#111] border border-white/10 px-3 py-1.5 rounded relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[var(--orange)] to-transparent opacity-20 -translate-x-full animate-[scanSweepVertical_3s_linear_infinite]" style="animation-direction: alternate;"></div>
-                <div class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse shadow-[0_0_8px_rgba(249,115,22,0.8)]"></div>
-                <span class="font-outfit text-[10px] text-[var(--orange)] tracking-[0.3em] uppercase font-medium">Precision 3D Manufacturing</span>
+            <div
+              class="flex items-center gap-4 justify-center lg:justify-start opacity-0 animate-[fadeUp_0.6s_0.2s_ease_forwards]">
+              <div
+                class="flex items-center gap-2 bg-[#111] border border-white/10 px-3 py-1.5 rounded relative overflow-hidden">
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-transparent via-[var(--orange)] to-transparent opacity-20 -translate-x-full animate-[scanSweepVertical_3s_linear_infinite]"
+                  style="animation-direction: alternate;"></div>
+                <div
+                  class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse shadow-[0_0_8px_rgba(249,115,22,0.8)]">
+                </div>
+                <span
+                  class="font-outfit text-[10px] text-[var(--orange)] tracking-[0.3em] uppercase font-medium">Precision
+                  3D Manufacturing</span>
               </div>
               <!-- Mini technical metric -->
-              <div class="hidden sm:flex items-center gap-2 text-white/40 font-outfit text-[10px] tracking-widest uppercase">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              <div
+                class="hidden sm:flex items-center gap-2 text-white/40 font-outfit text-[10px] tracking-widest uppercase">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
                 System Nominal
               </div>
             </div>
-            
+
             <div class="relative inline-block mt-2">
               <!-- Technical Bracket SVG (Top Left) -->
-              <svg class="absolute -left-4 sm:-left-8 -top-4 sm:-top-6 w-8 h-8 pointer-events-none opacity-40 hidden sm:block animate-[pulseOpacity_3s_infinite]" viewBox="0 0 32 32">
-                <path d="M 0 32 L 0 0 L 32 0" fill="none" stroke="var(--orange)" stroke-width="1.5"/>
-                <circle cx="0" cy="0" r="2.5" fill="var(--orange)"/>
+              <svg
+                class="absolute -left-4 sm:-left-8 -top-4 sm:-top-6 w-8 h-8 pointer-events-none opacity-40 hidden sm:block animate-[pulseOpacity_3s_infinite]"
+                viewBox="0 0 32 32">
+                <path d="M 0 32 L 0 0 L 32 0" fill="none" stroke="var(--orange)" stroke-width="1.5" />
+                <circle cx="0" cy="0" r="2.5" fill="var(--orange)" />
               </svg>
               <!-- Technical Bracket SVG (Bottom Right) -->
-              <svg class="absolute -right-4 sm:-right-8 -bottom-4 sm:-bottom-2 w-8 h-8 pointer-events-none opacity-40 hidden sm:block animate-[pulseOpacity_3s_infinite_1.5s]" viewBox="0 0 32 32">
-                <path d="M 32 0 L 32 32 L 0 32" fill="none" stroke="var(--orange)" stroke-width="1.5"/>
-                <circle cx="32" cy="32" r="2.5" fill="var(--orange)"/>
+              <svg
+                class="absolute -right-4 sm:-right-8 -bottom-4 sm:-bottom-2 w-8 h-8 pointer-events-none opacity-40 hidden sm:block animate-[pulseOpacity_3s_infinite_1.5s]"
+                viewBox="0 0 32 32">
+                <path d="M 32 0 L 32 32 L 0 32" fill="none" stroke="var(--orange)" stroke-width="1.5" />
+                <circle cx="32" cy="32" r="2.5" fill="var(--orange)" />
               </svg>
-              
+
               <h1 class="font-display text-[clamp(4rem,12vw,9rem)] leading-none relative z-10">
                 <div class="flex flex-wrap gap-x-4 justify-center lg:justify-start">
                   <div class="word">
@@ -995,9 +1090,12 @@
                 </div>
                 <div class="flex flex-wrap gap-x-4 justify-center lg:justify-start relative">
                   <div class="word">
-                    <div class="word-inner d3 fill-mode-forwards text-[var(--orange)] relative inline-block tech-glow-text">
+                    <div
+                      class="word-inner d3 fill-mode-forwards text-[var(--orange)] relative inline-block tech-glow-text">
                       WE PRINT
-                      <div class="absolute -right-6 top-[20%] bottom-[20%] w-[3px] bg-[var(--orange)] animate-pulse hidden lg:block shadow-[0_0_10px_rgba(249,115,22,0.8)]"></div>
+                      <div
+                        class="absolute -right-6 top-[20%] bottom-[20%] w-[3px] bg-[var(--orange)] animate-pulse hidden lg:block shadow-[0_0_10px_rgba(249,115,22,0.8)]">
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1009,18 +1107,22 @@
               with expert craftsmanship to deliver precision-engineered solutions for your most ambitious projects.
             </p>
             <!-- Hero CTA buttons -->
-            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 opacity-0 animate-[fadeUp_0.8s_1.1s_ease_forwards]">
+            <div
+              class="flex flex-wrap items-center justify-center lg:justify-start gap-4 opacity-0 animate-[fadeUp_0.8s_1.1s_ease_forwards]">
               <a href="#"
                 class="group/btn hud-border inline-flex items-center justify-center gap-3 px-10 py-4 font-outfit font-medium text-xs tracking-[0.2em] uppercase no-underline transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[var(--orange)] text-white cursor-pointer hover:bg-white hover:text-black shadow-[0_0_20px_rgba(249,115,22,0.2)]">
                 <span class="relative z-10">Get a Quote</span>
-                <svg class="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <svg class="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1"
+                  fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
               <a href="#"
                 class="inline-flex items-center justify-center gap-3 px-10 py-4 font-outfit font-medium text-xs tracking-[0.2em] uppercase no-underline transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#111] text-gray-300 cursor-pointer hover:text-white hud-border group">
                 <span class="relative z-10">Our Work</span>
-                <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div
+                  class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
               </a>
             </div>
             <!-- Stats bar -->
@@ -1049,76 +1151,103 @@
               <div id="circle-wrapper" class="group relative">
                 <img src="./assets/hero-image.jpg" alt="3D Printed Dragon Head Sculpture"
                   class="w-full h-full object-cover block transition-transform duration-1000 group-hover:scale-105" />
-                
-                <!-- Volumetric Glow / Depth Overlay -->
-                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,rgba(0,0,0,0.6)_100%)] pointer-events-none z-[5]"></div>
 
-                <div class="measure-box z-[20]"><span class="label-45">45mm</span><span class="label-70">70mm</span></div>
-                
+                <!-- Volumetric Glow / Depth Overlay -->
+                <div
+                  class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,rgba(0,0,0,0.6)_100%)] pointer-events-none z-[5]">
+                </div>
+
+                <div class="measure-box z-[20]"><span class="label-45">45mm</span><span class="label-70">70mm</span>
+                </div>
+
                 <!-- Advanced SVG & Vector Overlay -->
                 <div class="absolute inset-0 pointer-events-none z-[15] overflow-hidden rounded-full">
                   <!-- Base Crosshairs -->
                   <div class="absolute top-1/2 left-[5%] right-[5%] h-px bg-white/10"></div>
                   <div class="absolute left-1/2 top-[5%] bottom-[5%] w-px bg-white/10"></div>
-                  
+
                   <!-- Scanning Line Animation -->
-                  <div class="absolute left-0 right-0 h-1 bg-gradient-to-b from-transparent via-[var(--orange)] to-transparent opacity-0 animate-[scanSweepVertical_4s_linear_infinite] z-[16]"></div>
-                  
+                  <div
+                    class="absolute left-0 right-0 h-1 bg-gradient-to-b from-transparent via-[var(--orange)] to-transparent opacity-0 animate-[scanSweepVertical_4s_linear_infinite] z-[16]">
+                  </div>
+
                   <!-- Radar Pulse -->
-                  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full border border-[var(--orange)] opacity-0 animate-[radarPulse_4s_ease-out_infinite]"></div>
+                  <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full border border-[var(--orange)] opacity-0 animate-[radarPulse_4s_ease-out_infinite]">
+                  </div>
 
                   <!-- Complex SVG Rings -->
                   <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 400">
                     <defs>
                       <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="var(--orange)" stop-opacity="0.8"/>
-                        <stop offset="100%" stop-color="var(--orange)" stop-opacity="0.1"/>
+                        <stop offset="0%" stop-color="var(--orange)" stop-opacity="0.8" />
+                        <stop offset="100%" stop-color="var(--orange)" stop-opacity="0.1" />
                       </linearGradient>
                       <linearGradient id="orbitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#fff" stop-opacity="0.3"/>
-                        <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+                        <stop offset="0%" stop-color="#fff" stop-opacity="0.3" />
+                        <stop offset="100%" stop-color="#fff" stop-opacity="0" />
                       </linearGradient>
                     </defs>
-                    
+
                     <!-- Center Targeting -->
-                    <circle cx="200" cy="200" r="10" fill="none" stroke="var(--orange)" stroke-width="1" opacity="0.8" />
+                    <circle cx="200" cy="200" r="10" fill="none" stroke="var(--orange)" stroke-width="1"
+                      opacity="0.8" />
                     <circle cx="200" cy="200" r="4" fill="var(--orange)" opacity="0.6" class="animate-pulse" />
-                    <rect x="185" y="185" width="30" height="30" fill="none" stroke="white" stroke-width="0.5" opacity="0.2" />
-                    
+                    <rect x="185" y="185" width="30" height="30" fill="none" stroke="white" stroke-width="0.5"
+                      opacity="0.2" />
+
                     <!-- Outer Rotating Dashed Ring -->
-                    <circle cx="200" cy="200" r="180" fill="none" stroke="url(#ringGrad)" stroke-width="1" stroke-dasharray="4 8" style="transform-origin: center; animation: spinSlow 30s linear infinite;" />
-                    
+                    <circle cx="200" cy="200" r="180" fill="none" stroke="url(#ringGrad)" stroke-width="1"
+                      stroke-dasharray="4 8"
+                      style="transform-origin: center; animation: spinSlow 30s linear infinite;" />
+
                     <!-- Inner Tech Ring -->
-                    <circle cx="200" cy="200" r="140" fill="none" stroke="url(#orbitGrad)" stroke-width="1" stroke-dasharray="1 4" style="transform-origin: center; animation: spinSlowReverse 40s linear infinite;" />
-                    
+                    <circle cx="200" cy="200" r="140" fill="none" stroke="url(#orbitGrad)" stroke-width="1"
+                      stroke-dasharray="1 4"
+                      style="transform-origin: center; animation: spinSlowReverse 40s linear infinite;" />
+
                     <!-- Corner Targeting Brackets in SVG -->
-                    <path d="M 40 60 L 40 40 L 60 40" fill="none" stroke="var(--orange)" stroke-width="1.5" opacity="0.6" />
-                    <path d="M 360 60 L 360 40 L 340 40" fill="none" stroke="var(--orange)" stroke-width="1.5" opacity="0.6" />
-                    <path d="M 40 340 L 40 360 L 60 360" fill="none" stroke="var(--orange)" stroke-width="1.5" opacity="0.6" />
-                    <path d="M 360 340 L 360 340 L 340 360" fill="none" stroke="var(--orange)" stroke-width="1.5" opacity="0.6" />
+                    <path d="M 40 60 L 40 40 L 60 40" fill="none" stroke="var(--orange)" stroke-width="1.5"
+                      opacity="0.6" />
+                    <path d="M 360 60 L 360 40 L 340 40" fill="none" stroke="var(--orange)" stroke-width="1.5"
+                      opacity="0.6" />
+                    <path d="M 40 340 L 40 360 L 60 360" fill="none" stroke="var(--orange)" stroke-width="1.5"
+                      opacity="0.6" />
+                    <path d="M 360 340 L 360 340 L 340 360" fill="none" stroke="var(--orange)" stroke-width="1.5"
+                      opacity="0.6" />
 
                     <!-- Animated Path Tracing (Data line) -->
-                    <path d="M 200 200 L 250 120 L 350 120" fill="none" stroke="var(--orange)" stroke-width="1" opacity="0.8" stroke-dasharray="200" style="animation: dashDraw 3s ease-out forwards, pulseOpacity 2s infinite alternate;" />
-                    <circle cx="350" cy="120" r="3" fill="var(--orange)" class="animate-pulse"/>
-                    
+                    <path d="M 200 200 L 250 120 L 350 120" fill="none" stroke="var(--orange)" stroke-width="1"
+                      opacity="0.8" stroke-dasharray="200"
+                      style="animation: dashDraw 3s ease-out forwards, pulseOpacity 2s infinite alternate;" />
+                    <circle cx="350" cy="120" r="3" fill="var(--orange)" class="animate-pulse" />
+
                     <!-- Secondary Trace -->
-                    <path d="M 200 200 L 150 280 L 50 280" fill="none" stroke="white" stroke-width="0.5" opacity="0.4" stroke-dasharray="200" style="animation: dashDraw 4s ease-out forwards;" />
+                    <path d="M 200 200 L 150 280 L 50 280" fill="none" stroke="white" stroke-width="0.5" opacity="0.4"
+                      stroke-dasharray="200" style="animation: dashDraw 4s ease-out forwards;" />
                     <rect x="47" y="277" width="6" height="6" fill="white" opacity="0.4" />
                   </svg>
                 </div>
 
                 <!-- Floating Specification Tags -->
-                <div class="absolute top-[22%] right-[-10%] sm:right-[-5%] z-[20] flex items-center gap-2 animate-[floatTech_6s_ease-in-out_infinite]">
+                <div
+                  class="absolute top-[22%] right-[-10%] sm:right-[-5%] z-[20] flex items-center gap-2 animate-[floatTech_6s_ease-in-out_infinite]">
                   <div class="w-8 h-px bg-[var(--orange)]"></div>
-                  <div class="glass-panel px-3 py-1.5 text-[9px] font-outfit uppercase tracking-widest text-white shadow-[0_0_15px_rgba(249,115,22,0.15)] relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full animate-[shimmerSlide_3s_infinite]"></div>
-                    <span class="text-[var(--orange)] mr-1 relative z-10">XYZ</span> <span class="relative z-10">0.01mm</span>
+                  <div
+                    class="glass-panel px-3 py-1.5 text-[9px] font-outfit uppercase tracking-widest text-white shadow-[0_0_15px_rgba(249,115,22,0.15)] relative overflow-hidden">
+                    <div
+                      class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full animate-[shimmerSlide_3s_infinite]">
+                    </div>
+                    <span class="text-[var(--orange)] mr-1 relative z-10">XYZ</span> <span
+                      class="relative z-10">0.01mm</span>
                   </div>
                 </div>
 
                 <!-- Status Badge -->
-                <div class="absolute bottom-[20%] left-[-15%] sm:left-[-10%] z-[20] flex items-center gap-2 animate-[floatTech_5s_ease-in-out_infinite_reverse]">
-                  <div class="glass-panel border-[var(--orange)]/40 px-3 py-1.5 text-[9px] font-outfit uppercase tracking-widest text-white shadow-[0_0_20px_rgba(249,115,22,0.2)]">
+                <div
+                  class="absolute bottom-[20%] left-[-15%] sm:left-[-10%] z-[20] flex items-center gap-2 animate-[floatTech_5s_ease-in-out_infinite_reverse]">
+                  <div
+                    class="glass-panel border-[var(--orange)]/40 px-3 py-1.5 text-[9px] font-outfit uppercase tracking-widest text-white shadow-[0_0_20px_rgba(249,115,22,0.2)]">
                     <span class="inline-block w-1.5 h-1.5 bg-[var(--orange)] rounded-full mr-2 animate-pulse"></span>
                     PROTOTYPE ACTIVE
                   </div>
@@ -1210,10 +1339,13 @@
   </section>
 
   <!-- INDUSTRIES -->
-  <section id="industries-section" class="border-t border-[var(--border)] section-dark bg-[var(--bg)] py-24 pb-28 relative overflow-hidden">
+  <section id="industries-section"
+    class="border-t border-[var(--border)] section-dark bg-[var(--bg)] py-24 pb-28 relative overflow-hidden">
     <!-- Background grid pattern -->
-    <div class="absolute inset-0 pointer-events-none opacity-[0.03]" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f97316' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;)"></div>
-    
+    <div class="absolute inset-0 pointer-events-none opacity-[0.03]"
+      style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f97316' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;)">
+    </div>
+
     <div class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
       <!-- Modern section header -->
       <div class="flex flex-col items-center justify-center gap-6 mb-16 reveal text-center">
@@ -1221,210 +1353,379 @@
           <div class="flex items-center gap-3">
             <span class="font-display text-[var(--orange)] text-lg tracking-wider">02</span>
             <div class="w-8 h-px bg-[var(--orange)]"></div>
-            <span class="font-outfit text-xs text-[var(--orange)] tracking-[0.3em] uppercase font-medium">Industries</span>
+            <span
+              class="font-outfit text-xs text-[var(--orange)] tracking-[0.3em] uppercase font-medium">Industries</span>
           </div>
-          <h2 class="font-display text-[clamp(2.8rem,7vw,6rem)] leading-none text-white tracking-tight">What We <span class="text-[var(--orange)]">Serve</span></h2>
-          <p class="font-outfit text-gray-500 max-w-[520px] leading-[1.7] text-[0.95rem]">Precision-engineered solutions across diverse industries, from aerospace to education.</p>
+          <h2 class="font-display text-[clamp(2.8rem,7vw,6rem)] leading-none text-white tracking-tight">What We <span
+              class="text-[var(--orange)]">Serve</span></h2>
+          <p class="font-outfit text-gray-500 max-w-[520px] leading-[1.7] text-[0.95rem]">Precision-engineered solutions
+            across diverse industries, from aerospace to education.</p>
         </div>
-        <a href="#" class="group/btn inline-flex items-center justify-center gap-3 px-10 py-4 mt-2 font-outfit font-medium text-xs tracking-[0.2em] uppercase no-underline transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#111] text-gray-300 cursor-pointer hover:text-white w-full md:w-auto relative hud-border group">
+        <a href="#"
+          class="group/btn inline-flex items-center justify-center gap-3 px-10 py-4 mt-2 font-outfit font-medium text-xs tracking-[0.2em] uppercase no-underline transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#111] text-gray-300 cursor-pointer hover:text-white w-full md:w-auto relative hud-border group">
           <span class="relative z-10">View All Industries</span>
-          <svg class="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <svg class="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none"
+            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+          <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          </div>
         </a>
       </div>
-      
+
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Engineering -->
-        <article class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 flex flex-col relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div>
-          <div class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full"></div>
-          <span class="absolute top-4 right-4 font-display text-white/5 text-4xl group-hover:text-[var(--orange)]/20 transition-colors duration-300">01</span>
-          <div class="card-icon mb-6">
-            <svg width="40" height="40" viewBox="0 0 64 64" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:scale-110 transition-transform duration-300">
-              <circle cx="32" cy="32" r="8" />
-              <circle cx="32" cy="32" r="14" stroke-dasharray="4 3" />
-              <path d="M32 10v8M32 46v8M10 32h8M46 32h8M16 16l6 6M42 42l6 6M16 48l6-6M42 22l6-6" />
-              <circle cx="32" cy="32" r="3" fill="var(--orange)" stroke="none" />
-            </svg>
+        <article
+          class="ind-card reveal bg-[#111] border border-[#2a2a2a] flex flex-col relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl z-20 pointer-events-none"></div>
+          <div class="corner-br z-20 pointer-events-none"></div>
+          <div
+            class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full z-20">
           </div>
-          <h3 class="font-display text-[var(--orange)] text-2xl mb-3 flex items-center gap-3">
-            Engineering
-            <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
-          </h3>
-          <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">Advanced functional prototypes for rigorous testing.</p>
-          <div class="flex flex-col gap-3 mt-auto">
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Functional prototyping</span>
+          <span
+            class="absolute top-4 right-4 font-display text-white/10 text-4xl group-hover:text-[var(--orange)]/30 transition-colors duration-300 z-20 pointer-events-none drop-shadow-md">01</span>
+
+          <div class="w-full h-48 sm:h-56 relative overflow-hidden shrink-0 border-b border-[#2a2a2a]">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/40 to-transparent z-10 pointer-events-none">
             </div>
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Technical validation models</span>
+            <div
+              class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 z-10 pointer-events-none">
             </div>
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Rapid stress-testing parts</span>
+            <img src="./assets/engineering-img.png" alt="Engineering"
+              class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" />
+            <div class="absolute bottom-4 left-6 z-20 card-icon drop-shadow-lg">
+              <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="var(--orange)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"
+                class="group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(249,115,22,0.5)]">
+                <circle cx="32" cy="32" r="8" />
+                <circle cx="32" cy="32" r="14" stroke-dasharray="4 3" />
+                <path d="M32 10v8M32 46v8M10 32h8M46 32h8M16 16l6 6M42 42l6 6M16 48l6-6M42 22l6-6" />
+                <circle cx="32" cy="32" r="3" fill="var(--orange)" stroke="none" />
+              </svg>
             </div>
           </div>
+
+          <div class="p-6 pt-4 sm:p-8 sm:pt-6 flex flex-col flex-1 relative z-20 bg-[#111]">
+            <h3 class="font-display text-[var(--orange)] text-2xl mb-3 flex items-center gap-3">
+              Engineering
+              <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
+            </h3>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">Advanced functional prototypes for rigorous
+              testing.</p>
+            <div class="flex flex-col gap-3 mt-auto">
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Functional
+                  prototyping</span>
+              </div>
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Technical
+                  validation models</span>
+              </div>
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Rapid
+                  stress-testing parts</span>
+              </div>
+            </div>
         </article>
 
         <!-- Manufacturing -->
-        <article class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 flex flex-col relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div>
-          <div class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full"></div>
-          <span class="absolute top-4 right-4 font-display text-white/5 text-4xl group-hover:text-[var(--orange)]/20 transition-colors duration-300">02</span>
-          <div class="card-icon mb-6">
-            <svg width="40" height="40" viewBox="0 0 64 64" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:scale-110 transition-transform duration-300">
-              <rect x="8" y="36" width="48" height="18" rx="2" />
-              <path d="M12 36V28l8-8 8 8V36M28 36V28l8-8 8 8V36M44 36V28l8-8 2 8V36" />
-              <rect x="14" y="40" width="8" height="8" rx="1" />
-              <rect x="28" y="40" width="8" height="8" rx="1" />
-              <rect x="42" y="40" width="8" height="8" rx="1" />
-            </svg>
+        <article
+          class="ind-card reveal bg-[#111] border border-[#2a2a2a] flex flex-col relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl z-20 pointer-events-none"></div>
+          <div class="corner-br z-20 pointer-events-none"></div>
+          <div
+            class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full z-20">
           </div>
-          <h3 class="font-display text-[var(--orange)] text-2xl mb-3 flex items-center gap-3">
-            Manufacturing
-            <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
-          </h3>
-          <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">Rapid tooling & production workflows for factory operations.</p>
-          <div class="flex flex-col gap-3 mt-auto">
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Custom jigs and fixtures</span>
+          <span
+            class="absolute top-4 right-4 font-display text-white/10 text-4xl group-hover:text-[var(--orange)]/30 transition-colors duration-300 z-20 pointer-events-none drop-shadow-md">02</span>
+
+          <div class="w-full h-48 sm:h-56 relative overflow-hidden shrink-0 border-b border-[#2a2a2a]">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/40 to-transparent z-10 pointer-events-none">
             </div>
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Low-volume production runs</span>
+            <div
+              class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 z-10 pointer-events-none">
             </div>
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Industrial tooling solutions</span>
+            <img src="./assets/Manufacturing-img.webp" alt="Manufacturing"
+              class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" />
+            <div class="absolute bottom-4 left-6 z-20 card-icon drop-shadow-lg">
+              <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="var(--orange)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"
+                class="group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(249,115,22,0.5)]">
+                <rect x="8" y="36" width="48" height="18" rx="2" />
+                <path d="M12 36V28l8-8 8 8V36M28 36V28l8-8 8 8V36M44 36V28l8-8 2 8V36" />
+                <rect x="14" y="40" width="8" height="8" rx="1" />
+                <rect x="28" y="40" width="8" height="8" rx="1" />
+                <rect x="42" y="40" width="8" height="8" rx="1" />
+              </svg>
             </div>
           </div>
+
+          <div class="p-6 pt-4 sm:p-8 sm:pt-6 flex flex-col flex-1 relative z-20 bg-[#111]">
+            <h3 class="font-display text-[var(--orange)] text-2xl mb-3 flex items-center gap-3">
+              Manufacturing
+              <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
+            </h3>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">Rapid tooling & production workflows for
+              factory operations.</p>
+            <div class="flex flex-col gap-3 mt-auto">
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Custom
+                  jigs and fixtures</span>
+              </div>
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Low-volume
+                  production runs</span>
+              </div>
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Industrial
+                  tooling solutions</span>
+              </div>
+            </div>
         </article>
 
         <!-- Automotive -->
-        <article class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 flex flex-col relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div>
-          <div class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full"></div>
-          <span class="absolute top-4 right-4 font-display text-white/5 text-4xl group-hover:text-[var(--orange)]/20 transition-colors duration-300">03</span>
-          <div class="card-icon mb-6">
-            <svg width="40" height="40" viewBox="0 0 64 64" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:scale-110 transition-transform duration-300">
-              <path d="M6 36l6-12 8-4h20l8 4 6 12" />
-              <path d="M4 36h56v8a2 2 0 01-2 2H6a2 2 0 01-2-2v-8Z" />
-              <circle cx="16" cy="44" r="5" />
-              <circle cx="48" cy="44" r="5" />
-              <circle cx="16" cy="44" r="2" fill="var(--orange)" stroke="none" />
-              <circle cx="48" cy="44" r="2" fill="var(--orange)" stroke="none" />
-            </svg>
+        <article
+          class="ind-card reveal bg-[#111] border border-[#2a2a2a] flex flex-col relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl z-20 pointer-events-none"></div>
+          <div class="corner-br z-20 pointer-events-none"></div>
+          <div
+            class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full z-20">
           </div>
-          <h3 class="font-display text-[var(--orange)] text-2xl mb-3 flex items-center gap-3">
-            Automotive
-            <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
-          </h3>
-          <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">Custom vehicle parts & rapid prototyping for mobility.</p>
-          <div class="flex flex-col gap-3 mt-auto">
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Lightweight engine parts</span>
+          <span
+            class="absolute top-4 right-4 font-display text-white/10 text-4xl group-hover:text-[var(--orange)]/30 transition-colors duration-300 z-20 pointer-events-none drop-shadow-md">03</span>
+
+          <div class="w-full h-48 sm:h-56 relative overflow-hidden shrink-0 border-b border-[#2a2a2a]">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/40 to-transparent z-10 pointer-events-none">
             </div>
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Custom interior components</span>
+            <div
+              class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 z-10 pointer-events-none">
             </div>
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Durable spare parts</span>
+            <img src="./assets/Automotive-img.jpg" alt="Automotive"
+              class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" />
+            <div class="absolute bottom-4 left-6 z-20 card-icon drop-shadow-lg">
+              <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="var(--orange)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"
+                class="group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(249,115,22,0.5)]">
+                <path d="M6 36l6-12 8-4h20l8 4 6 12" />
+                <path d="M4 36h56v8a2 2 0 01-2 2H6a2 2 0 01-2-2v-8Z" />
+                <circle cx="16" cy="44" r="5" />
+                <circle cx="48" cy="44" r="5" />
+                <circle cx="16" cy="44" r="2" fill="var(--orange)" stroke="none" />
+                <circle cx="48" cy="44" r="2" fill="var(--orange)" stroke="none" />
+              </svg>
             </div>
           </div>
+
+          <div class="p-6 pt-4 sm:p-8 sm:pt-6 flex flex-col flex-1 relative z-20 bg-[#111]">
+            <h3 class="font-display text-[var(--orange)] text-2xl mb-3 flex items-center gap-3">
+              Automotive
+              <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
+            </h3>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">Custom vehicle parts & rapid prototyping for
+              mobility.</p>
+            <div class="flex flex-col gap-3 mt-auto">
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Lightweight
+                  engine parts</span>
+              </div>
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Custom
+                  interior components</span>
+              </div>
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Durable
+                  spare parts</span>
+              </div>
+            </div>
         </article>
 
-        <!-- Aerospace -->
-        <article class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 flex flex-col relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div>
-          <div class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full"></div>
-          <span class="absolute top-4 right-4 font-display text-white/5 text-4xl group-hover:text-[var(--orange)]/20 transition-colors duration-300">04</span>
-          <div class="card-icon mb-6">
-            <svg width="40" height="40" viewBox="0 0 64 64" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:scale-110 transition-transform duration-300">
-              <path d="M10 44L28 20a6 6 0 016 0l20 24" />
-              <path d="M16 38l-8 6 2-10ZM48 38l8 6-2-10Z" />
-              <path d="M26 36l6-14 6 14M28 44h8M30 20v-8" />
-              <circle cx="32" cy="10" r="2" />
-            </svg>
+        <article
+          class="ind-card reveal bg-[#111] border border-[#2a2a2a] flex flex-col relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl z-20 pointer-events-none"></div>
+          <div class="corner-br z-20 pointer-events-none"></div>
+          <div
+            class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full z-20">
           </div>
-          <h3 class="font-display text-[var(--orange)] text-2xl mb-3 flex items-center gap-3">
-            Aerospace
-            <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
-          </h3>
-          <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">Lightweight, high-precision components for the skies.</p>
-          <div class="flex flex-col gap-3 mt-auto">
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>High-strength-to-weight parts</span>
+          <span
+            class="absolute top-4 right-4 font-display text-white/10 text-4xl group-hover:text-[var(--orange)]/30 transition-colors duration-300 z-20 pointer-events-none drop-shadow-md">04</span>
+
+          <div class="w-full h-48 sm:h-56 relative overflow-hidden shrink-0 border-b border-[#2a2a2a]">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/40 to-transparent z-10 pointer-events-none">
             </div>
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Extreme temp resistance</span>
+            <div
+              class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 z-10 pointer-events-none">
             </div>
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Complex aerodynamic ducts</span>
+            <img src="./assets/Aerospace-img.webp" alt="Aerospace"
+              class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" />
+            <div class="absolute bottom-4 left-6 z-20 card-icon drop-shadow-lg">
+              <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="var(--orange)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"
+                class="group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(249,115,22,0.5)]">
+                <path d="M10 44L28 20a6 6 0 016 0l20 24" />
+                <path d="M16 38l-8 6 2-10ZM48 38l8 6-2-10Z" />
+                <path d="M26 36l6-14 6 14M28 44h8M30 20v-8" />
+                <circle cx="32" cy="10" r="2" />
+              </svg>
             </div>
           </div>
+
+          <div class="p-6 pt-4 sm:p-8 sm:pt-6 flex flex-col flex-1 relative z-20 bg-[#111]">
+            <h3 class="font-display text-[var(--orange)] text-2xl mb-3 flex items-center gap-3">
+              Aerospace
+              <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
+            </h3>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">Lightweight, high-precision components for
+              the skies.</p>
+            <div class="flex flex-col gap-3 mt-auto">
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>High-strength-to-weight
+                  parts</span>
+              </div>
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Extreme
+                  temp resistance</span>
+              </div>
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Complex
+                  aerodynamic ducts</span>
+              </div>
+            </div>
         </article>
 
         <!-- Education -->
-        <article class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 flex flex-col relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div>
-          <div class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full"></div>
-          <span class="absolute top-4 right-4 font-display text-white/5 text-4xl group-hover:text-[var(--orange)]/20 transition-colors duration-300">05</span>
-          <div class="card-icon mb-6">
-            <svg width="40" height="40" viewBox="0 0 64 64" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:scale-110 transition-transform duration-300">
-              <circle cx="32" cy="26" r="9" />
-              <path d="M27 26c0-4 2-7 5-8M28 50v-15M36 50v-15M22 50h20" />
-            </svg>
+        <article
+          class="ind-card reveal bg-[#111] border border-[#2a2a2a] flex flex-col relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl z-20 pointer-events-none"></div>
+          <div class="corner-br z-20 pointer-events-none"></div>
+          <div
+            class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full z-20">
           </div>
-          <h3 class="font-display text-[var(--orange)] text-2xl mb-3 flex items-center gap-3">
-            Education
-            <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
-          </h3>
-          <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">Hands-on learning models & experimental prototypes.</p>
-          <div class="flex flex-col gap-3 mt-auto">
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Tangible research aids</span>
+          <span
+            class="absolute top-4 right-4 font-display text-white/10 text-4xl group-hover:text-[var(--orange)]/30 transition-colors duration-300 z-20 pointer-events-none drop-shadow-md">05</span>
+
+          <div class="w-full h-48 sm:h-56 relative overflow-hidden shrink-0 border-b border-[#2a2a2a]">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/40 to-transparent z-10 pointer-events-none">
             </div>
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Architectural replicas</span>
+            <div
+              class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 z-10 pointer-events-none">
             </div>
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Classroom prototypes</span>
+            <img src="./assets/Education-img.webp" alt="Education"
+              class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" />
+            <div class="absolute bottom-4 left-6 z-20 card-icon drop-shadow-lg">
+              <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="var(--orange)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"
+                class="group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(249,115,22,0.5)]">
+                <circle cx="32" cy="26" r="9" />
+                <path d="M27 26c0-4 2-7 5-8M28 50v-15M36 50v-15M22 50h20" />
+              </svg>
             </div>
           </div>
+
+          <div class="p-6 pt-4 sm:p-8 sm:pt-6 flex flex-col flex-1 relative z-20 bg-[#111]">
+            <h3 class="font-display text-[var(--orange)] text-2xl mb-3 flex items-center gap-3">
+              Education
+              <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
+            </h3>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">Hands-on learning models & experimental
+              prototypes.</p>
+            <div class="flex flex-col gap-3 mt-auto">
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Tangible
+                  research aids</span>
+              </div>
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Architectural
+                  replicas</span>
+              </div>
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Classroom
+                  prototypes</span>
+              </div>
+            </div>
         </article>
 
         <!-- All Industries -->
-        <article class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 flex flex-col relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div>
-          <div class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full"></div>
-          <span class="absolute top-4 right-4 font-display text-white/5 text-4xl group-hover:text-[var(--orange)]/20 transition-colors duration-300">06</span>
-          <div class="card-icon mb-6">
-            <svg width="40" height="40" viewBox="0 0 64 64" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:scale-110 transition-transform duration-300">
-              <rect x="8" y="8" width="14" height="14" rx="2" />
-              <rect x="25" y="8" width="14" height="14" rx="2" />
-              <rect x="42" y="8" width="14" height="14" rx="2" />
-              <rect x="8" y="25" width="14" height="14" rx="2" />
-              <rect x="25" y="25" width="14" height="14" rx="2" />
-              <rect x="42" y="25" width="14" height="14" rx="2" />
-              <rect x="8" y="42" width="14" height="14" rx="2" />
-              <rect x="25" y="42" width="14" height="14" rx="2" />
-              <rect x="42" y="42" width="14" height="14" rx="2" />
-            </svg>
+        <article
+          class="ind-card reveal bg-[#111] border border-[#2a2a2a] flex flex-col relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl z-20 pointer-events-none"></div>
+          <div class="corner-br z-20 pointer-events-none"></div>
+          <div
+            class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full z-20">
           </div>
-          <h3 class="font-display text-[var(--orange)] text-2xl mb-3 flex items-center gap-3">
-            All Industries
-            <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
-          </h3>
-          <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">Versatile capabilities across countless other sectors.</p>
-          <div class="flex flex-col gap-3 mt-auto">
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Artistic sculptures</span>
+          <span
+            class="absolute top-4 right-4 font-display text-white/10 text-4xl group-hover:text-[var(--orange)]/30 transition-colors duration-300 z-20 pointer-events-none drop-shadow-md">06</span>
+
+          <div class="w-full h-48 sm:h-56 relative overflow-hidden shrink-0 border-b border-[#2a2a2a]">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/40 to-transparent z-10 pointer-events-none">
             </div>
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Specialized components</span>
+            <div
+              class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 z-10 pointer-events-none">
             </div>
-            <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
-              <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Bespoke designs</span>
+            <img src="./assets/All Industries-img.avif" alt="All Industries"
+              class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" />
+            <div class="absolute bottom-4 left-6 z-20 card-icon drop-shadow-lg">
+              <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="var(--orange)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"
+                class="group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(249,115,22,0.5)]">
+                <rect x="8" y="8" width="14" height="14" rx="2" />
+                <rect x="25" y="8" width="14" height="14" rx="2" />
+                <rect x="42" y="8" width="14" height="14" rx="2" />
+                <rect x="8" y="25" width="14" height="14" rx="2" />
+                <rect x="25" y="25" width="14" height="14" rx="2" />
+                <rect x="42" y="25" width="14" height="14" rx="2" />
+                <rect x="8" y="42" width="14" height="14" rx="2" />
+                <rect x="25" y="42" width="14" height="14" rx="2" />
+                <rect x="42" y="42" width="14" height="14" rx="2" />
+              </svg>
             </div>
           </div>
+
+          <div class="p-6 pt-4 sm:p-8 sm:pt-6 flex flex-col flex-1 relative z-20 bg-[#111]">
+            <h3 class="font-display text-[var(--orange)] text-2xl mb-3 flex items-center gap-3">
+              All Industries
+              <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
+            </h3>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-4">Versatile capabilities across countless
+              other sectors.</p>
+            <div class="flex flex-col gap-3 mt-auto">
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Artistic
+                  sculptures</span>
+              </div>
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Specialized
+                  components</span>
+              </div>
+              <div class="card-bullet flex items-center gap-3 font-outfit text-gray-300 text-sm group/item">
+                <span
+                  class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span><span>Bespoke
+                  designs</span>
+              </div>
+            </div>
         </article>
 
       </div>
@@ -1479,15 +1780,17 @@
             <a href="#"
               class="group/btn hud-border inline-flex items-center justify-center gap-3 px-10 py-4 font-outfit font-medium text-xs tracking-[0.2em] uppercase no-underline transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[var(--orange)] text-white cursor-pointer hover:bg-white hover:text-black shadow-[0_0_20px_rgba(249,115,22,0.2)]">
               <span class="relative z-10">Get Quote</span>
-              <svg class="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none"
-                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1"
+                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
             <a href="#"
               class="inline-flex items-center justify-center gap-3 px-10 py-4 font-outfit font-medium text-xs tracking-[0.2em] uppercase no-underline transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#111] text-gray-300 cursor-pointer hover:text-white hud-border group">
               <span class="relative z-10">Learn More</span>
-              <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div
+                class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
             </a>
           </div>
         </div>
@@ -1536,115 +1839,206 @@
   <!-- PROCESS -->
   <section class="section-light bg-[var(--bg)] py-24 pb-28 border-t border-[var(--border)] relative overflow-hidden">
     <!-- Technical Background -->
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(249,115,22,0.03)_0%,transparent_70%)] pointer-events-none"></div>
-    <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px); background-size: 40px 40px;"></div>
-    
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(249,115,22,0.03)_0%,transparent_70%)] pointer-events-none">
+    </div>
+    <div class="absolute inset-0 opacity-20 pointer-events-none"
+      style="background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px); background-size: 40px 40px;">
+    </div>
+
     <div class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
       <div class="flex flex-col items-center justify-center gap-6 mb-16 reveal text-center">
         <div class="flex flex-col items-center gap-4">
           <div class="flex items-center gap-3">
             <span class="font-display text-[var(--orange)] text-lg tracking-wider">04</span>
             <div class="w-8 h-px bg-[var(--orange)]"></div>
-            <span class="font-outfit text-xs text-[var(--orange)] tracking-[0.3em] uppercase font-medium">Our Process</span>
+            <span class="font-outfit text-xs text-[var(--orange)] tracking-[0.3em] uppercase font-medium">Our
+              Process</span>
           </div>
-          <h2 class="font-display text-[clamp(2.8rem,7vw,6rem)] leading-none text-[var(--dark)] tracking-tight">The Journey of <span class="text-[var(--orange)]">Creation</span></h2>
-          <p class="font-outfit text-gray-500 max-w-[520px] leading-[1.7] text-[0.95rem]">Our systematic approach ensures every project is executed with precision and excellence from design to quality assurance.</p>
+          <h2 class="font-display text-[clamp(2.8rem,7vw,6rem)] leading-none text-[var(--dark)] tracking-tight">The
+            Journey of <span class="text-[var(--orange)]">Creation</span></h2>
+          <p class="font-outfit text-gray-500 max-w-[520px] leading-[1.7] text-[0.95rem]">Our systematic approach
+            ensures every project is executed with precision and excellence from design to quality assurance.</p>
         </div>
-        <div class="flex items-center justify-center gap-2 font-outfit text-xs text-[var(--orange)] tracking-widest uppercase mt-2">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="animate-spin" style="animation-duration: 8s;"><circle cx="12" cy="12" r="10" stroke-dasharray="10 6"/></svg>
+        <div
+          class="flex items-center justify-center gap-2 font-outfit text-xs text-[var(--orange)] tracking-widest uppercase mt-2">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            class="animate-spin" style="animation-duration: 8s;">
+            <circle cx="12" cy="12" r="10" stroke-dasharray="10 6" />
+          </svg>
           Systematic Workflow
         </div>
       </div>
-      
+
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- 01 -->
-        <div class="ind-card reveal bg-[#111] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#333] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div><div class="scan-line"></div>
-          <div class="absolute top-0 left-0 w-1 h-0 bg-[var(--orange)] transition-all duration-500 group-hover:h-full"></div>
-          <div class="w-12 h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded flex items-center justify-center mb-8 relative">
-            <svg class="w-5 h-5 text-[var(--orange)] z-10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-            <div class="absolute inset-0 bg-[var(--orange)]/10 opacity-0 group-hover:opacity-100 transition-opacity blur-md"></div>
+        <div
+          class="ind-card reveal bg-[#111] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#333] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl"></div>
+          <div class="corner-br"></div>
+          <div class="scan-line"></div>
+          <div class="absolute top-0 left-0 w-1 h-0 bg-[var(--orange)] transition-all duration-500 group-hover:h-full">
+          </div>
+          <div
+            class="w-12 h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded flex items-center justify-center mb-8 relative">
+            <svg class="w-5 h-5 text-[var(--orange)] z-10" fill="none" stroke="currentColor" stroke-width="1.5"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
+            </svg>
+            <div
+              class="absolute inset-0 bg-[var(--orange)]/10 opacity-0 group-hover:opacity-100 transition-opacity blur-md">
+            </div>
           </div>
           <div class="relative z-10">
             <h3 class="font-outfit font-semibold text-white text-xl mb-3">CAD Design</h3>
-            <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Create detailed digital models with precision specifications</p>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Create detailed digital models with precision
+              specifications</p>
           </div>
-          <div class="font-display text-[4rem] leading-none text-white/5 absolute bottom-4 right-6 transition-all duration-500 group-hover:text-[var(--orange)]/20 group-hover:scale-110 transform origin-bottom-right">01</div>
+          <div
+            class="font-display text-[4rem] leading-none text-white/5 absolute bottom-4 right-6 transition-all duration-500 group-hover:text-[var(--orange)]/20 group-hover:scale-110 transform origin-bottom-right">
+            01</div>
         </div>
 
         <!-- 02 -->
-        <div class="ind-card reveal bg-[#111] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#333] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div><div class="scan-line"></div>
-          <div class="absolute top-0 left-0 w-1 h-0 bg-[var(--orange)] transition-all duration-500 group-hover:h-full"></div>
-          <div class="w-12 h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded flex items-center justify-center mb-8 relative">
-            <svg class="w-5 h-5 text-[var(--orange)] z-10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-            <div class="absolute inset-0 bg-[var(--orange)]/10 opacity-0 group-hover:opacity-100 transition-opacity blur-md"></div>
+        <div
+          class="ind-card reveal bg-[#111] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#333] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl"></div>
+          <div class="corner-br"></div>
+          <div class="scan-line"></div>
+          <div class="absolute top-0 left-0 w-1 h-0 bg-[var(--orange)] transition-all duration-500 group-hover:h-full">
+          </div>
+          <div
+            class="w-12 h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded flex items-center justify-center mb-8 relative">
+            <svg class="w-5 h-5 text-[var(--orange)] z-10" fill="none" stroke="currentColor" stroke-width="1.5"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+            <div
+              class="absolute inset-0 bg-[var(--orange)]/10 opacity-0 group-hover:opacity-100 transition-opacity blur-md">
+            </div>
           </div>
           <div class="relative z-10">
             <h3 class="font-outfit font-semibold text-white text-xl mb-3">Material Selection</h3>
-            <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Choose optimal materials for your project requirements</p>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Choose optimal materials for your project
+              requirements</p>
           </div>
-          <div class="font-display text-[4rem] leading-none text-white/5 absolute bottom-4 right-6 transition-all duration-500 group-hover:text-[var(--orange)]/20 group-hover:scale-110 transform origin-bottom-right">02</div>
+          <div
+            class="font-display text-[4rem] leading-none text-white/5 absolute bottom-4 right-6 transition-all duration-500 group-hover:text-[var(--orange)]/20 group-hover:scale-110 transform origin-bottom-right">
+            02</div>
         </div>
 
         <!-- 03 -->
-        <div class="ind-card reveal bg-[#111] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#333] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div><div class="scan-line"></div>
-          <div class="absolute top-0 left-0 w-1 h-0 bg-[var(--orange)] transition-all duration-500 group-hover:h-full"></div>
-          <div class="w-12 h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded flex items-center justify-center mb-8 relative">
-            <svg class="w-5 h-5 text-[var(--orange)] z-10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065zM15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            <div class="absolute inset-0 bg-[var(--orange)]/10 opacity-0 group-hover:opacity-100 transition-opacity blur-md"></div>
+        <div
+          class="ind-card reveal bg-[#111] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#333] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl"></div>
+          <div class="corner-br"></div>
+          <div class="scan-line"></div>
+          <div class="absolute top-0 left-0 w-1 h-0 bg-[var(--orange)] transition-all duration-500 group-hover:h-full">
+          </div>
+          <div
+            class="w-12 h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded flex items-center justify-center mb-8 relative">
+            <svg class="w-5 h-5 text-[var(--orange)] z-10" fill="none" stroke="currentColor" stroke-width="1.5"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065zM15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <div
+              class="absolute inset-0 bg-[var(--orange)]/10 opacity-0 group-hover:opacity-100 transition-opacity blur-md">
+            </div>
           </div>
           <div class="relative z-10">
             <h3 class="font-outfit font-semibold text-white text-xl mb-3">Machine Setup</h3>
             <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Configure equipment with precise parameters</p>
           </div>
-          <div class="font-display text-[4rem] leading-none text-white/5 absolute bottom-4 right-6 transition-all duration-500 group-hover:text-[var(--orange)]/20 group-hover:scale-110 transform origin-bottom-right">03</div>
+          <div
+            class="font-display text-[4rem] leading-none text-white/5 absolute bottom-4 right-6 transition-all duration-500 group-hover:text-[var(--orange)]/20 group-hover:scale-110 transform origin-bottom-right">
+            03</div>
         </div>
 
         <!-- 04 -->
-        <div class="ind-card reveal bg-[#111] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#333] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div><div class="scan-line"></div>
-          <div class="absolute top-0 left-0 w-1 h-0 bg-[var(--orange)] transition-all duration-500 group-hover:h-full"></div>
-          <div class="w-12 h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded flex items-center justify-center mb-8 relative">
-            <svg class="w-5 h-5 text-[var(--orange)] z-10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
-            <div class="absolute inset-0 bg-[var(--orange)]/10 opacity-0 group-hover:opacity-100 transition-opacity blur-md"></div>
+        <div
+          class="ind-card reveal bg-[#111] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#333] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl"></div>
+          <div class="corner-br"></div>
+          <div class="scan-line"></div>
+          <div class="absolute top-0 left-0 w-1 h-0 bg-[var(--orange)] transition-all duration-500 group-hover:h-full">
+          </div>
+          <div
+            class="w-12 h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded flex items-center justify-center mb-8 relative">
+            <svg class="w-5 h-5 text-[var(--orange)] z-10" fill="none" stroke="currentColor" stroke-width="1.5"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            </svg>
+            <div
+              class="absolute inset-0 bg-[var(--orange)]/10 opacity-0 group-hover:opacity-100 transition-opacity blur-md">
+            </div>
           </div>
           <div class="relative z-10">
             <h3 class="font-outfit font-semibold text-white text-xl mb-3">Build Process</h3>
             <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Execute 3D printing with real-time monitoring</p>
           </div>
-          <div class="font-display text-[4rem] leading-none text-white/5 absolute bottom-4 right-6 transition-all duration-500 group-hover:text-[var(--orange)]/20 group-hover:scale-110 transform origin-bottom-right">04</div>
+          <div
+            class="font-display text-[4rem] leading-none text-white/5 absolute bottom-4 right-6 transition-all duration-500 group-hover:text-[var(--orange)]/20 group-hover:scale-110 transform origin-bottom-right">
+            04</div>
         </div>
 
         <!-- 05 -->
-        <div class="ind-card reveal bg-[#111] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#333] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div><div class="scan-line"></div>
-          <div class="absolute top-0 left-0 w-1 h-0 bg-[var(--orange)] transition-all duration-500 group-hover:h-full"></div>
-          <div class="w-12 h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded flex items-center justify-center mb-8 relative">
-            <svg class="w-5 h-5 text-[var(--orange)] z-10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            <div class="absolute inset-0 bg-[var(--orange)]/10 opacity-0 group-hover:opacity-100 transition-opacity blur-md"></div>
+        <div
+          class="ind-card reveal bg-[#111] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#333] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl"></div>
+          <div class="corner-br"></div>
+          <div class="scan-line"></div>
+          <div class="absolute top-0 left-0 w-1 h-0 bg-[var(--orange)] transition-all duration-500 group-hover:h-full">
+          </div>
+          <div
+            class="w-12 h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded flex items-center justify-center mb-8 relative">
+            <svg class="w-5 h-5 text-[var(--orange)] z-10" fill="none" stroke="currentColor" stroke-width="1.5"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div
+              class="absolute inset-0 bg-[var(--orange)]/10 opacity-0 group-hover:opacity-100 transition-opacity blur-md">
+            </div>
           </div>
           <div class="relative z-10">
             <h3 class="font-outfit font-semibold text-white text-xl mb-3">Post-Processing</h3>
             <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Refine and finish your 3D printed parts</p>
           </div>
-          <div class="font-display text-[4rem] leading-none text-white/5 absolute bottom-4 right-6 transition-all duration-500 group-hover:text-[var(--orange)]/20 group-hover:scale-110 transform origin-bottom-right">05</div>
+          <div
+            class="font-display text-[4rem] leading-none text-white/5 absolute bottom-4 right-6 transition-all duration-500 group-hover:text-[var(--orange)]/20 group-hover:scale-110 transform origin-bottom-right">
+            05</div>
         </div>
 
         <!-- 06 -->
-        <div class="ind-card reveal bg-[#111] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#333] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div><div class="scan-line"></div>
-          <div class="absolute top-0 left-0 w-1 h-0 bg-[var(--orange)] transition-all duration-500 group-hover:h-full"></div>
-          <div class="w-12 h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded flex items-center justify-center mb-8 relative">
-            <svg class="w-5 h-5 text-[var(--orange)] z-10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            <div class="absolute inset-0 bg-[var(--orange)]/10 opacity-0 group-hover:opacity-100 transition-opacity blur-md"></div>
+        <div
+          class="ind-card reveal bg-[#111] border border-[var(--border)] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#333] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl"></div>
+          <div class="corner-br"></div>
+          <div class="scan-line"></div>
+          <div class="absolute top-0 left-0 w-1 h-0 bg-[var(--orange)] transition-all duration-500 group-hover:h-full">
+          </div>
+          <div
+            class="w-12 h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded flex items-center justify-center mb-8 relative">
+            <svg class="w-5 h-5 text-[var(--orange)] z-10" fill="none" stroke="currentColor" stroke-width="1.5"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div
+              class="absolute inset-0 bg-[var(--orange)]/10 opacity-0 group-hover:opacity-100 transition-opacity blur-md">
+            </div>
           </div>
           <div class="relative z-10">
             <h3 class="font-outfit font-semibold text-white text-xl mb-3">Quality Assurance</h3>
-            <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Deliver exceptional results meeting your specifications</p>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6]">Deliver exceptional results meeting your
+              specifications</p>
           </div>
-          <div class="font-display text-[4rem] leading-none text-white/5 absolute bottom-4 right-6 transition-all duration-500 group-hover:text-[var(--orange)]/20 group-hover:scale-110 transform origin-bottom-right">06</div>
+          <div
+            class="font-display text-[4rem] leading-none text-white/5 absolute bottom-4 right-6 transition-all duration-500 group-hover:text-[var(--orange)]/20 group-hover:scale-110 transform origin-bottom-right">
+            06</div>
         </div>
       </div>
     </div>
@@ -1677,109 +2071,167 @@
   <!-- OUR WORK -->
   <section class="section-light bg-[var(--bg)] py-24 pb-28 border-t border-[var(--border)] relative overflow-hidden">
     <!-- Technical Background -->
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(249,115,22,0.03)_0%,transparent_70%)] pointer-events-none"></div>
-    <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.02)_0%,transparent_70%)] rounded-full blur-3xl pointer-events-none"></div>
-    
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(249,115,22,0.03)_0%,transparent_70%)] pointer-events-none">
+    </div>
+    <div
+      class="absolute top-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.02)_0%,transparent_70%)] rounded-full blur-3xl pointer-events-none">
+    </div>
+
     <div class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
       <div class="flex flex-col items-center justify-center gap-6 mb-16 reveal text-center">
         <div class="flex flex-col items-center gap-4 max-w-[600px]">
           <div class="flex items-center gap-3">
             <span class="font-display text-[var(--orange)] text-lg tracking-wider">05</span>
             <div class="w-8 h-px bg-[var(--orange)]"></div>
-            <span class="font-outfit text-xs text-[var(--orange)] tracking-[0.3em] uppercase font-medium">Portfolio</span>
+            <span
+              class="font-outfit text-xs text-[var(--orange)] tracking-[0.3em] uppercase font-medium">Portfolio</span>
           </div>
-          <h2 class="font-display text-[clamp(2.8rem,6vw,5.5rem)] leading-none text-[var(--dark)] tracking-tight">Our Work</h2>
-          <p class="font-outfit text-gray-500 leading-[1.7] text-base mt-2">Showcasing innovation, precision, and excellence through advanced prototypes, creative solutions, and industrial applications.</p>
+          <h2 class="font-display text-[clamp(2.8rem,6vw,5.5rem)] leading-none text-[var(--dark)] tracking-tight">Our
+            Work</h2>
+          <p class="font-outfit text-gray-500 leading-[1.7] text-base mt-2">Showcasing innovation, precision, and
+            excellence through advanced prototypes, creative solutions, and industrial applications.</p>
         </div>
-        <a href="our-work.html" class="group/btn inline-flex items-center justify-center gap-3 px-10 py-4 mt-2 font-outfit font-medium text-xs tracking-[0.2em] uppercase no-underline transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#111] text-gray-300 cursor-pointer hover:text-white w-full md:w-auto relative hud-border group">
+        <a href="our-work.html"
+          class="group/btn inline-flex items-center justify-center gap-3 px-10 py-4 mt-2 font-outfit font-medium text-xs tracking-[0.2em] uppercase no-underline transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[#111] text-gray-300 cursor-pointer hover:text-white w-full md:w-auto relative hud-border group">
           <span class="relative z-10">View All</span>
-          <svg class="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <svg class="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none"
+            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+          <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          </div>
         </a>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Item 1 -->
-        <div class="ind-card reveal lg:row-span-2 h-[400px] lg:h-full relative overflow-hidden cursor-pointer group shadow-sm bg-[#0a0a0a]">
-          <div class="corner-tl z-20"></div><div class="corner-br z-20"></div>
-          <div class="absolute top-4 right-4 z-20 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div
+          class="ind-card reveal lg:row-span-2 h-[400px] lg:h-full relative overflow-hidden cursor-pointer group shadow-sm bg-[#0a0a0a]">
+          <div class="corner-tl z-20"></div>
+          <div class="corner-br z-20"></div>
+          <div
+            class="absolute top-4 right-4 z-20 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse"></span>
             <span class="font-outfit text-[9px] text-white tracking-widest uppercase">Inspect</span>
           </div>
-          <img src="./assets/furniture-model.avif" alt="Furniture Model" class="transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] block w-full h-full object-cover group-hover:scale-110 opacity-70 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-8 z-10">
+          <img src="./assets/furniture-model.avif" alt="Furniture Model"
+            class="transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] block w-full h-full object-cover group-hover:scale-110 opacity-70 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-8 z-10">
             <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 w-full relative">
-              <div class="absolute -left-4 top-0 bottom-0 w-[2px] bg-[var(--orange)] transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom"></div>
-              <span class="font-outfit text-[var(--orange)] text-[10px] tracking-[0.2em] uppercase font-semibold mb-2 block">3D Modeling</span>
+              <div
+                class="absolute -left-4 top-0 bottom-0 w-[2px] bg-[var(--orange)] transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom">
+              </div>
+              <span
+                class="font-outfit text-[var(--orange)] text-[10px] tracking-[0.2em] uppercase font-semibold mb-2 block">3D
+                Modeling</span>
               <h3 class="font-display text-white text-2xl tracking-wide">Furniture Model</h3>
             </div>
           </div>
         </div>
 
         <!-- Item 2 -->
-        <div class="ind-card reveal aspect-square sm:aspect-auto sm:h-[300px] lg:h-auto relative overflow-hidden cursor-pointer group shadow-sm bg-[#0a0a0a]">
-          <div class="corner-tl z-20"></div><div class="corner-br z-20"></div>
-          <img src="./assets/Mechanical-Prototype.jpg" alt="Mechanical Prototype" class="transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] block w-full h-full object-cover group-hover:scale-110 opacity-70 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-6 z-10">
+        <div
+          class="ind-card reveal aspect-square sm:aspect-auto sm:h-[300px] lg:h-auto relative overflow-hidden cursor-pointer group shadow-sm bg-[#0a0a0a]">
+          <div class="corner-tl z-20"></div>
+          <div class="corner-br z-20"></div>
+          <img src="./assets/Mechanical-Prototype.jpg" alt="Mechanical Prototype"
+            class="transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] block w-full h-full object-cover group-hover:scale-110 opacity-70 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-6 z-10">
             <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 w-full relative">
-              <div class="absolute -left-3 top-0 bottom-0 w-[2px] bg-[var(--orange)] transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom"></div>
-              <span class="font-outfit text-[var(--orange)] text-[9px] tracking-[0.2em] uppercase font-semibold mb-1 block">Prototyping</span>
+              <div
+                class="absolute -left-3 top-0 bottom-0 w-[2px] bg-[var(--orange)] transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom">
+              </div>
+              <span
+                class="font-outfit text-[var(--orange)] text-[9px] tracking-[0.2em] uppercase font-semibold mb-1 block">Prototyping</span>
               <h3 class="font-display text-white text-xl tracking-wide">Mechanical Prototype</h3>
             </div>
           </div>
         </div>
 
         <!-- Item 3 -->
-        <div class="ind-card reveal aspect-square sm:aspect-auto sm:h-[300px] lg:h-auto relative overflow-hidden cursor-pointer group shadow-sm bg-[#0a0a0a]">
-          <div class="corner-tl z-20"></div><div class="corner-br z-20"></div>
-          <img src="./assets/Anatomical-Model.jpg" alt="Anatomical Model" class="transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] block w-full h-full object-cover group-hover:scale-110 opacity-70 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-6 z-10">
+        <div
+          class="ind-card reveal aspect-square sm:aspect-auto sm:h-[300px] lg:h-auto relative overflow-hidden cursor-pointer group shadow-sm bg-[#0a0a0a]">
+          <div class="corner-tl z-20"></div>
+          <div class="corner-br z-20"></div>
+          <img src="./assets/Anatomical-Model.jpg" alt="Anatomical Model"
+            class="transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] block w-full h-full object-cover group-hover:scale-110 opacity-70 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-6 z-10">
             <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 w-full relative">
-              <div class="absolute -left-3 top-0 bottom-0 w-[2px] bg-[var(--orange)] transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom"></div>
-              <span class="font-outfit text-[var(--orange)] text-[9px] tracking-[0.2em] uppercase font-semibold mb-1 block">Medical</span>
+              <div
+                class="absolute -left-3 top-0 bottom-0 w-[2px] bg-[var(--orange)] transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom">
+              </div>
+              <span
+                class="font-outfit text-[var(--orange)] text-[9px] tracking-[0.2em] uppercase font-semibold mb-1 block">Medical</span>
               <h3 class="font-display text-white text-xl tracking-wide">Anatomical Model</h3>
             </div>
           </div>
         </div>
 
         <!-- Item 4 -->
-        <div class="ind-card reveal lg:row-span-2 h-[400px] lg:h-full relative overflow-hidden cursor-pointer group shadow-sm bg-[#0a0a0a]">
-          <div class="corner-tl z-20"></div><div class="corner-br z-20"></div>
-          <div class="absolute top-4 right-4 z-20 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div
+          class="ind-card reveal lg:row-span-2 h-[400px] lg:h-full relative overflow-hidden cursor-pointer group shadow-sm bg-[#0a0a0a]">
+          <div class="corner-tl z-20"></div>
+          <div class="corner-br z-20"></div>
+          <div
+            class="absolute top-4 right-4 z-20 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse"></span>
             <span class="font-outfit text-[9px] text-white tracking-widest uppercase">Inspect</span>
           </div>
-          <img src="./assets/Chair-design.avif" alt="Chair Design" class="transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] block w-full h-full object-cover group-hover:scale-110 opacity-70 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-8 z-10">
+          <img src="./assets/Chair-design.avif" alt="Chair Design"
+            class="transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] block w-full h-full object-cover group-hover:scale-110 opacity-70 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-8 z-10">
             <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 w-full relative">
-              <div class="absolute -left-4 top-0 bottom-0 w-[2px] bg-[var(--orange)] transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom"></div>
-              <span class="font-outfit text-[var(--orange)] text-[10px] tracking-[0.2em] uppercase font-semibold mb-2 block">Product Design</span>
+              <div
+                class="absolute -left-4 top-0 bottom-0 w-[2px] bg-[var(--orange)] transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom">
+              </div>
+              <span
+                class="font-outfit text-[var(--orange)] text-[10px] tracking-[0.2em] uppercase font-semibold mb-2 block">Product
+                Design</span>
               <h3 class="font-display text-white text-2xl tracking-wide">Chair Design</h3>
             </div>
           </div>
         </div>
 
         <!-- Item 5 -->
-        <div class="ind-card reveal aspect-square sm:aspect-auto sm:h-[300px] lg:h-auto relative overflow-hidden cursor-pointer group shadow-sm bg-[#0a0a0a]">
-          <div class="corner-tl z-20"></div><div class="corner-br z-20"></div>
-          <img src="./assets/playground-model.webp" alt="Playground" class="transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] block w-full h-full object-cover group-hover:scale-110 opacity-70 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-6 z-10">
+        <div
+          class="ind-card reveal aspect-square sm:aspect-auto sm:h-[300px] lg:h-auto relative overflow-hidden cursor-pointer group shadow-sm bg-[#0a0a0a]">
+          <div class="corner-tl z-20"></div>
+          <div class="corner-br z-20"></div>
+          <img src="./assets/playground-model.webp" alt="Playground"
+            class="transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] block w-full h-full object-cover group-hover:scale-110 opacity-70 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-6 z-10">
             <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 w-full relative">
-              <div class="absolute -left-3 top-0 bottom-0 w-[2px] bg-[var(--orange)] transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom"></div>
-              <span class="font-outfit text-[var(--orange)] text-[9px] tracking-[0.2em] uppercase font-semibold mb-1 block">Architecture</span>
+              <div
+                class="absolute -left-3 top-0 bottom-0 w-[2px] bg-[var(--orange)] transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom">
+              </div>
+              <span
+                class="font-outfit text-[var(--orange)] text-[9px] tracking-[0.2em] uppercase font-semibold mb-1 block">Architecture</span>
               <h3 class="font-display text-white text-xl tracking-wide">Playground Model</h3>
             </div>
           </div>
         </div>
 
         <!-- Item 6 -->
-        <div class="ind-card reveal aspect-square sm:aspect-auto sm:h-[300px] lg:h-auto relative overflow-hidden cursor-pointer group shadow-sm bg-[#0a0a0a]">
-          <div class="corner-tl z-20"></div><div class="corner-br z-20"></div>
-          <img src="./assets/industrial-support.avif" alt="Industrial Setup" class="transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] block w-full h-full object-cover group-hover:scale-110 opacity-70 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-6 z-10">
+        <div
+          class="ind-card reveal aspect-square sm:aspect-auto sm:h-[300px] lg:h-auto relative overflow-hidden cursor-pointer group shadow-sm bg-[#0a0a0a]">
+          <div class="corner-tl z-20"></div>
+          <div class="corner-br z-20"></div>
+          <img src="./assets/industrial-support.avif" alt="Industrial Setup"
+            class="transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] block w-full h-full object-cover group-hover:scale-110 opacity-70 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-6 z-10">
             <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 w-full relative">
-              <div class="absolute -left-3 top-0 bottom-0 w-[2px] bg-[var(--orange)] transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom"></div>
-              <span class="font-outfit text-[var(--orange)] text-[9px] tracking-[0.2em] uppercase font-semibold mb-1 block">Engineering</span>
+              <div
+                class="absolute -left-3 top-0 bottom-0 w-[2px] bg-[var(--orange)] transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom">
+              </div>
+              <span
+                class="font-outfit text-[var(--orange)] text-[9px] tracking-[0.2em] uppercase font-semibold mb-1 block">Engineering</span>
               <h3 class="font-display text-white text-xl tracking-wide">Industrial Setup</h3>
             </div>
           </div>
@@ -1790,120 +2242,165 @@
 
   <!-- TECHNOLOGY -->
   <section class="border-t border-[var(--border)] section-dark bg-[var(--bg)] py-24 pb-28 relative overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(249,115,22,0.03)_0%,transparent_70%)] pointer-events-none"></div>
-    
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(249,115,22,0.03)_0%,transparent_70%)] pointer-events-none">
+    </div>
+
     <div class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
       <div class="flex flex-col items-center justify-center text-center gap-6 mb-16 reveal">
         <div class="flex flex-col items-center gap-4">
           <div class="flex items-center gap-3">
             <span class="font-display text-[var(--orange)] text-lg tracking-wider">06</span>
             <div class="w-8 h-px bg-[var(--orange)]"></div>
-            <span class="font-outfit text-xs text-[var(--orange)] tracking-[0.3em] uppercase font-medium">Our Capabilities</span>
+            <span class="font-outfit text-xs text-[var(--orange)] tracking-[0.3em] uppercase font-medium">Our
+              Capabilities</span>
           </div>
-          <h2 class="font-display text-[clamp(2.8rem,6vw,5.5rem)] leading-none text-white tracking-tight">Our Technology</h2>
-          <p class="font-outfit text-gray-400 leading-[1.7] text-base max-w-[500px]">State-of-the-art technologies delivering high-precision, industrial-grade solutions tailored to your needs.</p>
+          <h2 class="font-display text-[clamp(2.8rem,6vw,5.5rem)] leading-none text-white tracking-tight">Our Technology
+          </h2>
+          <p class="font-outfit text-gray-400 leading-[1.7] text-base max-w-[500px]">State-of-the-art technologies
+            delivering high-precision, industrial-grade solutions tailored to your needs.</p>
         </div>
       </div>
-      
+
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- 01 FDM -->
-        <div class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div>
-          <div class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full"></div>
+        <div
+          class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl"></div>
+          <div class="corner-br"></div>
+          <div
+            class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full">
+          </div>
           <div class="relative z-10 pr-16 sm:pr-20">
             <h3 class="font-display text-[2.5rem] text-[var(--orange)] mb-4 flex items-center gap-3">
               FDM
               <span class="w-2 h-2 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
             </h3>
-            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-6">Cost-effective printing using thermoplastic filaments for prototypes and functional parts.</p>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-6">Cost-effective printing using thermoplastic
+              filaments for prototypes and functional parts.</p>
             <ul class="flex flex-col gap-3">
               <li class="font-outfit text-gray-300 text-sm flex items-center gap-3 group/item">
-                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span> Affordable prototyping
+                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span>
+                Affordable prototyping
               </li>
               <li class="font-outfit text-gray-300 text-sm flex items-center gap-3 group/item">
-                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span> Wide material options
+                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span>
+                Wide material options
               </li>
               <li class="font-outfit text-gray-300 text-sm flex items-center gap-3 group/item">
-                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span> Strong functional parts
+                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span>
+                Strong functional parts
               </li>
             </ul>
           </div>
-          <div class="font-display text-[6rem] leading-none text-white/5 absolute bottom-4 right-4 transition-all duration-500 group-hover:text-white/10 group-hover:scale-110">01</div>
+          <div
+            class="font-display text-[6rem] leading-none text-white/5 absolute bottom-4 right-4 transition-all duration-500 group-hover:text-white/10 group-hover:scale-110">
+            01</div>
         </div>
 
         <!-- 02 SLS -->
-        <div class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div>
-          <div class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full"></div>
+        <div
+          class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl"></div>
+          <div class="corner-br"></div>
+          <div
+            class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full">
+          </div>
           <div class="relative z-10 pr-16 sm:pr-20">
             <h3 class="font-display text-[2.5rem] text-[var(--orange)] mb-4 flex items-center gap-3">
               SLS
               <span class="w-2 h-2 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
             </h3>
-            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-6">Powder-based printing that creates strong, durable, and complex geometries without support structures.</p>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-6">Powder-based printing that creates strong,
+              durable, and complex geometries without support structures.</p>
             <ul class="flex flex-col gap-3">
               <li class="font-outfit text-gray-300 text-sm flex items-center gap-3 group/item">
-                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span> No support structures
+                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span>
+                No support structures
               </li>
               <li class="font-outfit text-gray-300 text-sm flex items-center gap-3 group/item">
-                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span> High strength
+                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span>
+                High strength
               </li>
               <li class="font-outfit text-gray-300 text-sm flex items-center gap-3 group/item">
-                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span> Complex geometries
+                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span>
+                Complex geometries
               </li>
             </ul>
           </div>
-          <div class="font-display text-[6rem] leading-none text-white/5 absolute bottom-4 right-4 transition-all duration-500 group-hover:text-white/10 group-hover:scale-110">02</div>
+          <div
+            class="font-display text-[6rem] leading-none text-white/5 absolute bottom-4 right-4 transition-all duration-500 group-hover:text-white/10 group-hover:scale-110">
+            02</div>
         </div>
 
         <!-- 03 SLA -->
-        <div class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div>
-          <div class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full"></div>
+        <div
+          class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl"></div>
+          <div class="corner-br"></div>
+          <div
+            class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full">
+          </div>
           <div class="relative z-10 pr-16 sm:pr-20">
             <h3 class="font-display text-[2.5rem] text-[var(--orange)] mb-4 flex items-center gap-3">
               SLA
               <span class="w-2 h-2 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
             </h3>
-            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-6">High-precision resin printing for smooth surfaces and fine details.</p>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-6">High-precision resin printing for smooth
+              surfaces and fine details.</p>
             <ul class="flex flex-col gap-3">
               <li class="font-outfit text-gray-300 text-sm flex items-center gap-3 group/item">
-                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span> High accuracy
+                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span>
+                High accuracy
               </li>
               <li class="font-outfit text-gray-300 text-sm flex items-center gap-3 group/item">
-                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span> Smooth surface finish
+                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span>
+                Smooth surface finish
               </li>
               <li class="font-outfit text-gray-300 text-sm flex items-center gap-3 group/item">
-                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span> Ideal for detailed models
+                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span>
+                Ideal for detailed models
               </li>
             </ul>
           </div>
-          <div class="font-display text-[6rem] leading-none text-white/5 absolute bottom-4 right-4 transition-all duration-500 group-hover:text-white/10 group-hover:scale-110">03</div>
+          <div
+            class="font-display text-[6rem] leading-none text-white/5 absolute bottom-4 right-4 transition-all duration-500 group-hover:text-white/10 group-hover:scale-110">
+            03</div>
         </div>
 
         <!-- 04 3D Scan -->
-        <div class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
-          <div class="corner-tl"></div><div class="corner-br"></div>
-          <div class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full"></div>
+        <div
+          class="ind-card reveal bg-[#111] border border-[#2a2a2a] p-8 relative overflow-hidden transition-all duration-500 cursor-pointer hover:-translate-y-2 hover:border-[#4a4a4a] hover:shadow-[0_20px_48px_rgba(249,115,22,0.1)] group">
+          <div class="corner-tl"></div>
+          <div class="corner-br"></div>
+          <div
+            class="absolute top-0 left-0 w-0 h-[2px] bg-[var(--orange)] transition-all duration-700 group-hover:w-full">
+          </div>
           <div class="relative z-10 pr-16 sm:pr-20">
             <h3 class="font-display text-[2.5rem] text-[var(--orange)] mb-4 flex items-center gap-3">
               Scan
               <span class="w-2 h-2 rounded-full bg-[var(--orange)] animate-pulse hidden group-hover:block"></span>
             </h3>
-            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-6">Accurate digital capture of physical objects for reverse engineering and replication.</p>
+            <p class="font-outfit text-gray-400 text-sm leading-[1.6] mb-6">Accurate digital capture of physical objects
+              for reverse engineering and replication.</p>
             <ul class="flex flex-col gap-3">
               <li class="font-outfit text-gray-300 text-sm flex items-center gap-3 group/item">
-                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span> High precision scanning
+                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span>
+                High precision scanning
               </li>
               <li class="font-outfit text-gray-300 text-sm flex items-center gap-3 group/item">
-                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span> Reverse engineering
+                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span>
+                Reverse engineering
               </li>
               <li class="font-outfit text-gray-300 text-sm flex items-center gap-3 group/item">
-                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span> Digital archiving
+                <span class="text-[var(--orange)] text-lg transition-transform group-hover/item:translate-x-1">→</span>
+                Digital archiving
               </li>
             </ul>
           </div>
-          <div class="font-display text-[6rem] leading-none text-white/5 absolute bottom-4 right-4 transition-all duration-500 group-hover:text-white/10 group-hover:scale-110">04</div>
+          <div
+            class="font-display text-[6rem] leading-none text-white/5 absolute bottom-4 right-4 transition-all duration-500 group-hover:text-white/10 group-hover:scale-110">
+            04</div>
         </div>
       </div>
     </div>
@@ -1912,12 +2409,16 @@
   <!-- CTA BANNER -->
   <section class="section-light bg-[#0a0a0a] py-32 border-y border-[var(--border)] relative overflow-hidden">
     <!-- Cinematic Background Elements -->
-    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay"></div>
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[2px] bg-gradient-to-r from-transparent via-[var(--orange)] to-transparent opacity-20 animate-[radarPulse_4s_ease-out_infinite]"></div>
-    
+    <div
+      class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay">
+    </div>
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[2px] bg-gradient-to-r from-transparent via-[var(--orange)] to-transparent opacity-20 animate-[radarPulse_4s_ease-out_infinite]">
+    </div>
+
     <div class="max-w-4xl mx-auto px-5 sm:px-8 text-center flex flex-col items-center relative z-10">
       <div class="flex flex-col items-center justify-center gap-10 reveal">
-        
+
         <!-- Radar Targeting SVG -->
         <svg class="w-16 h-16 opacity-60 animate-[spinSlow_20s_linear_infinite]" viewBox="0 0 64 64">
           <circle cx="32" cy="32" r="30" fill="none" stroke="var(--orange)" stroke-width="1" stroke-dasharray="4 4" />
@@ -1928,27 +2429,36 @@
 
         <div class="flex flex-col gap-6 text-center items-center">
           <div class="flex items-center gap-3">
-            <span class="font-outfit text-sm text-[var(--orange)] tracking-[0.4em] uppercase font-medium">Initiate Sequence</span>
+            <span class="font-outfit text-sm text-[var(--orange)] tracking-[0.4em] uppercase font-medium">Initiate
+              Sequence</span>
           </div>
           <h2 class="font-display text-[clamp(3.5rem,8vw,6.5rem)] leading-none text-white tracking-tight mt-2">
             Ready to Print<br />Your <span class="text-[var(--orange)] inline-block relative">
               Vision
-              <svg class="absolute -bottom-2 left-0 w-full h-2" preserveAspectRatio="none" viewBox="0 0 100 100"><path d="M0,50 Q50,100 100,50" fill="none" stroke="var(--orange)" stroke-width="4"/></svg>
+              <svg class="absolute -bottom-2 left-0 w-full h-2" preserveAspectRatio="none" viewBox="0 0 100 100">
+                <path d="M0,50 Q50,100 100,50" fill="none" stroke="var(--orange)" stroke-width="4" />
+              </svg>
             </span>?
           </h2>
           <p class="font-outfit text-gray-400 leading-[1.7] text-base sm:text-lg max-w-[540px]">
             Input your parameters and our engineering team will synthesize a custom manufacturing quote within 24 hours.
           </p>
         </div>
-        
+
         <div class="flex flex-col sm:flex-row gap-5 justify-center mt-4 w-full">
-          <a href="#" class="group/btn hud-border inline-flex items-center justify-center gap-3 px-12 py-5 font-outfit font-bold text-sm tracking-[0.2em] uppercase no-underline transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[var(--orange)] text-white cursor-pointer hover:bg-white hover:text-black shadow-[0_0_20px_rgba(249,115,22,0.2)] w-full sm:w-auto">
+          <a href="#"
+            class="group/btn hud-border inline-flex items-center justify-center gap-3 px-12 py-5 font-outfit font-bold text-sm tracking-[0.2em] uppercase no-underline transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[var(--orange)] text-white cursor-pointer hover:bg-white hover:text-black shadow-[0_0_20px_rgba(249,115,22,0.2)] w-full sm:w-auto">
             <span class="relative z-10">Deploy Request</span>
-            <svg class="w-5 h-5 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            <svg class="w-5 h-5 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1"
+              fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
           </a>
-          <a href="#" class="inline-flex items-center justify-center gap-3 px-12 py-5 font-outfit font-bold text-sm tracking-[0.2em] uppercase no-underline transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] glass-panel text-gray-300 cursor-pointer hover:text-white hud-border group w-full sm:w-auto">
+          <a href="#"
+            class="inline-flex items-center justify-center gap-3 px-12 py-5 font-outfit font-bold text-sm tracking-[0.2em] uppercase no-underline transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] glass-panel text-gray-300 cursor-pointer hover:text-white hud-border group w-full sm:w-auto">
             <span class="relative z-10">Access Database</span>
-            <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
           </a>
         </div>
       </div>
@@ -2289,7 +2799,8 @@
       <span class="w-1.5 h-1.5 rounded-full bg-[var(--orange)] animate-pulse"></span>
       Get Quote
     </span>
-    <svg class="w-4 h-4 hidden sm:block relative z-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+    <svg class="w-4 h-4 hidden sm:block relative z-10" fill="none" stroke="currentColor" stroke-width="2"
+      viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
     </svg>
   </a>
